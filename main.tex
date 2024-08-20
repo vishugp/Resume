@@ -1,0 +1,267 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letter paper,11pt]{article}
+
+\usepackage{latexsym}
+
+\usepackage[empty]{fullpage}
+\usepackage{ragged2e}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+% \setlist[itemize]{noitemsep}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0.08003pt}
+\setlength{\footskip}{4.08003pt}
+% \newlist{myEnumerate}{itemize}{6}
+% \setlist[myEnumerate]{nosep,label=\protect\mpbullet}
+% \setlistdepth{6}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-7pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+\justifying
+\vspace{-3pt}
+  \item\small{
+    {#1}
+  }
+}
+
+% \newcommand{\resumeSubheading}[4]{
+%   \vspace{-2pt}\item
+%     \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
+%       \textbf{#1} & #2 \\
+%       \textit{\small#3} & \textit{\small #4} \\
+%     \end{tabular*}\vspace{-7pt}
+% }
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubheading}[5]{%
+% \vspace{0.1cm}%
+  \item
+    \begin{tabular*}
+    {1\textwidth}
+    {l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \small#2 \\
+      {\small#3} & {\small #4} \\
+      {\small#5}
+    \end{tabular*}%
+  \vspace{-0.8cm}
+}
+
+
+\newcommand{\resumeProjectHeading}[4]{
+% \vspace{-12pt}
+    \vspace{-0.2cm}
+    \item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      {\small#1} & {\small#2} \\
+      {\small#3} & {\small#4}
+    \end{tabular*}\vspace{-13pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+%----------HEADING-----------------
+
+
+\begin{center}
+    \textbf{\Huge \scshape Vishwanath Guruvayur} \\ 
+    \vspace{7pt}
+    \small 
+    \href{tel:+1 (571) 602-2034}{\underline{+1 (571) 602-2034}} $|$ \href{mailto:vishvesh2704@gmail.com}{\underline{vishguru2704@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/vishgp}{\underline{linkedin.com/in/vishgp}} $|$
+    \href{https://github.com/vishugp}{\underline{github.com/vishugp}} $|$
+    \href{https://vishugp.github.io}{\underline{vishugp.github.io}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+    \resumeSubHeadingListStart
+    \resumeSubheading
+         {\textbf{University of Virginia}}{Charlottesville, VA}
+        {Master of Science in Data Science}{2024 -- 2025}{}
+
+ \vspace{0.2cm}
+        
+    \resumeSubheading
+        {\textbf{Birla Institute of Technology \& Science, Pilani (BITS Pilani)}}{Hyderabad, India}
+        {Bachelor of Engineering in Mechanical Engineering, Minor in Data Science $|$ CGPA: 8.83/10}{2018 -- 2022}{}
+
+
+ \resumeSubHeadingListEnd 
+%
+%----------- SKILLS-----------
+\section{Skills}
+% \vspace{3pt}
+ \begin{itemize}[leftmargin=0.00in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Python, R, SQL, C/C++, MATLAB, Julia} \\
+     % \vspace{1pt}
+     \textbf{Machine Learning}{: PyTorch, Keras, TensorFlow, Random Forests, FP-Growth} \\
+     % \vspace{1pt}
+     \textbf{Data \& BI Tools}{: Azure DataBricks, MS Excel, PowerBI, SPSS}
+    }}
+ \end{itemize}
+ 
+\setlist[itemize]{leftmargin=0.38cm}
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+    {Piramal Critical Care (PCC)}
+    {Bethlehem, PA (Remote)}
+    {Data Science Lead}
+    {Jan. 2022 -- Jun. 2024}{}
+    % \vspace{1pt}
+
+    \resumeItemListStart
+    
+    \resumeItem {\textbf{Lead the Data Science \& Analytics Team} to drive business growth by integrating data-driven strategies across Supply Chain, Demand Planning, Finance, and Sales Operations.}
+
+    \resumeItem{Implemented multiple \textbf{Smart Automation Frameworks}, increasing data accuracy and reducing manual reporting work by \textbf{60\%} through end-to-end automation and advanced visualizations.}
+    
+    \resumeItem{Leveraged \textbf{Descriptive \& Predictive Analytics} in various projects to uncover patterns using past sales and supply chain trends using ML techniques to forecast Market Share and prevent Material Stock-outs.}
+    \resumeItemListEnd
+
+
+    \resumeSubheading
+    {\textbf{Piramal - Consumer Product Division (CPD)}}{Mumbai, India}
+      {Data Science Intern}{Jul. 2021 -- Dec. 2021}
+      {}\vspace{1pt}
+      \resumeItemListStart
+        \resumeItem{Developed a \textbf{Sales Recommendation Engine} using the FP-Growth Algorithm, optimizing product reach for over 300,000 retailers across India. Implemented a tracking system to refine the recommendations resulting in \textbf{15\% Market Growth}.}
+        
+        \resumeItem{Created an Ensemble Predictive Model of Random Forest and Logistic Regression to predict Sales Officer's Attrition. Worked with the HR Team to create a feedback mechanism, which improved prediction accuracy and retention by \textbf{20\%}.}
+        
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+\vspace{0.2cm}
+    \resumeSubHeadingListStart
+     \resumeProjectHeading
+          {\textbf{Piramal Sales Market Share \& Growth Analytics}}
+          {Piramal Critical Care}
+          {Machine Learning, Analytics $|$ Finance \& Sales}
+          {Jun. 2023 - Dec. 2023}
+          
+          \resumeItemListStart
+            \resumeItem{Developed market share and growth analytics for the injectable pain market, utilizing advanced statistical metrics to classify markets by competitiveness, growth, and portfolio diversity, driving key long-term business decisions.}
+          \resumeItemListEnd
+
+    
+     \resumeProjectHeading
+          {\textbf{Inventory Management Analytics \& Forecasting}}
+          {Piramal Critical Care}
+          {Machine Learning, Analytics $|$ Supply Chain \& Finance }
+          {Jan. 2023 - Jun. 2023}
+          
+          \resumeItemListStart
+            \resumeItem{Built an inventory forecasting model incorporating scenario planning and demand forecasting techniques, reducing provisional write-offs by optimizing inventory management for aging and expiring stock categories}
+          \resumeItemListEnd
+
+
+      
+           \resumeProjectHeading
+          {\textbf{Sentiment Analysis Modelling of Employee's Feedback Texts}}
+          {Piramal CPD}
+          {Natural Language Processing $|$ Human Resources}
+          {Oct. 2021 - Dec. 2022}
+          
+          \resumeItemListStart
+            \resumeItem{Built an ensemble NLP model using VADER Sentiment and TextBlob to analyse the key areas of development for employees and assign appropriate development plans based on the sentiment theme captured}
+          \resumeItemListEnd
+          
+    
+          
+      
+
+
+    \resumeProjectHeading
+          {\textbf{Emotion Recognition using Genetic Algorithm} } {BITS Pilani}
+          {Artificial Intelligence, Computer Vision $|$ Artificial Intelligence Course}
+          {Jan 2021 - Jun 2021}
+          
+          \resumeItemListStart
+            \resumeItem{Worked on implementing the Genetic Algorithm to identify the emotion of a masked face from a set of emotions using the OpenFace Toolkit for facial landmark detection.}
+          \resumeItemListEnd
+
+
+    
+    \resumeProjectHeading
+          {\textbf{Live Obstacle Tracking for Robotic Reinforcement Learning Systems}}{BITS Pilani}
+          {Artificial Intelligence $|$ Applied AI in Robotics Project}{Aug 2020 - Dec 2020}
+          
+          \resumeItemListStart
+            \resumeItem{Developed a live interpretation of the robotics visual perception with optimal detection of obstacles with the knowledge of the obstacle velocity and acceleration using OpenCV and Gazebo Simulator.}
+          \resumeItemListEnd
+
+
+          
+    \resumeSubHeadingListEnd
+    
+
+%-------------------------------------------
+\end{document}
