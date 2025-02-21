@@ -21,7 +21,7 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \input{glyphtounicode}
-
+\usepackage{lmodern}
 % \setlist[itemize]{noitemsep}
 
 
@@ -61,12 +61,23 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
 \justifying
-\vspace{-2.4px}
-  \item\small{
-    {#1}
+\vspace{-2.7px}
+  \item{
+    \fontsize{10.3pt}{11pt}\selectfont{#1}
   }
 }
 
+\newcommand{\resumeProjectItem}[1]{
+  \justifying
+  \vspace{1px}
+  \item[\textbf{-}]\small {\small{#1}}
+}
+
+\newcommand{\resumeProject}[2]{
+  \justifying
+  \vspace{1px}
+  \item[\textbf{-}]{\small{\fontseries{b}\selectfont{#1}}: {#2}}
+}
 
 \newcommand{\resumeItems}[2]{
 \justifying
@@ -91,17 +102,18 @@
     \end{tabular*}\vspace{-8pt}
 }
 
-\newcommand{\resumeSubheading}[5]{%
+\newcommand{\resumeSubheading}[4]{%
 % \vspace{0.1cm}%
   \item
     \begin{tabular*}
     {1\textwidth}
     {l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \small#2 \\
-      {\small#3} & {\small #4} \\
-      {\small#5}
+      \textbf{\fontsize{11.5pt}{13pt}\selectfont{#1}} & {\fontsize{10.5pt}{13pt}\selectfont{#2}}
+      \\
+      {\fontsize{11pt}{12pt}\selectfont{#3}} & {\fontsize{10.5pt}{13pt}\selectfont{#4}} \\
+      % {\small#5}
     \end{tabular*}%
-  \vspace{-0.95cm}
+  \vspace{-0.5cm}
 }
 
 
@@ -144,7 +156,8 @@
 
 
 \begin{center}
-    {\Huge \textbf{\name}} \\
+    {\Huge \textbf{\name}} 
+    \\
     {\Large{\role}}
 \end{center}
 
@@ -170,50 +183,56 @@
 \end{tabular*}
 
 
-
-% \begin{center}
-%     \textbf{\Huge \scshape Vishwanath Guruvayur} \\ 
-%     \vspace{5pt}
-%     \small 
-%     \href{tel:+1 (571) 602-2034}{{+1 (571) 602-2034}} $|$ \href{mailto:vishvesh2704@gmail.com}{{vishguru2704@gmail.com}} $|$ 
-%     \href{https://linkedin.com/in/vishgp}{{linkedin.com/in/vishgp}} $|$
-%     \href{https://github.com/vishugp}{{github.com/vishugp}} $|$
-%     \href{https://vishugp.github.io}{{vishugp.github.io}}
-% \end{center}
-
 %-----------EDUCATION----------
 \vspace{-9pt}
 \section{\large{Education}}
+\vspace{5pt}
     \resumeSubHeadingListStart
     
     \resumeSubheading
-         {University of Virginia (UVA)}{Charlottesville, VA}
+         {University of Virginia}{Charlottesville, VA}
         {Master of Science in Data Science}{Jun 2024 -- May 2025}{}
         
-        \vspace{9pt}
+        \vspace{8pt}
+         \fontsize{9.5pt}{11pt}\selectfont{
+         {\fontseries{b}\selectfont{{Capstone Project (sponsored by LMI Inc.)}}}: Implementing Multimodal RAG based LLM for Education \\
+        Research on methods in including multimodal data to develop an Agentic AI-enhanced, context-rich learning experience.
+        }
+        \\
+
         
-        \footnotesize{\textbf{Capstone Project [sponsored by LMI Inc.]:} \textsl{Implementing Multimodal RAG based LLM for Education} \\
-        {Research on methods to leverage Lecture PDFs, Slides \& Videos in LLMs to develop an enhanced, context-rich learning experience.
-        }\\
         \vspace{2px}
-        \textbf{Coursework:}
-        \textsl{Statistical Machine Learning \textbullet{} 
-        Linear Models \textbullet{} 
-        Bayesian Machine Learning \textbullet{} 
-        Large-Language Models \textbullet{}
-        Deep Learning \textbullet{}
-        Big Data Systems \textbullet{} 
-        Applied Data Engineering \textbullet{}
-        Data Mining \textbullet{} 
-        Data Ethics \textbullet{} 
-        Data Structures \& Algo \textbullet{}
-        Time Series Analysis
-        }}
+        \fontsize{9.5pt}{11pt}\selectfont{\fontseries{b}\selectfont{Coursework:}}
+        \fontsize{9.5pt}{11pt}\selectfont{Statistical Machine Learning {\textbullet} 
+        Large Language Models {\textbullet}
+        Deep Learning {\textbullet}
+        Big Data Systems {\textbullet}
+        Bayesian Machine Learning {\textbullet}
+        Applied Data Engineering {\textbullet}
+        Text Analytics {\textbullet}
+        Data Ethics {\textbullet}
+        Data Structures and Algorithms {\textbullet}
+        Linear Models 
+        % \textbullet{}
+        % Time Series Analysis
+        }
+
+        \vspace{-1px}
+        {\fontseries{b}\fontsize{9.5pt}{11pt}\selectfont{Activities:}}
+        \fontsize{9.5pt}{11pt}\selectfont{Data Science Ambassador {\textbullet}
+        TA - Statistical Machine Learning {\textbullet}
+        Academic Village Resident (The Range)}
+
+
+
+     \resumeSubHeadingListEnd 
+     \vspace{-5pt}
+     \resumeSubHeadingListStart   
+     \resumeSubheading
+         {Birla Institute of Technology and Science (BITS Pilani)}{Hyderabad, India}
+         {Bachelor of Engineering in Mechanical Engineering, Minor in Data Science}{Aug 2018 -- Dec 2021}
 
     
-    \vspace{3pt}    
-    \resumeSubheading
-        {\small{Birla Institute of Technology \& Science, Pilani (BITS Pilani)}}{Hyderabad, India}{Bachelor of Engineering in Mechanical Engineering, Minor in Data Science}{Aug 2018 -- Dec 2021}{}
    
 
  \resumeSubHeadingListEnd 
@@ -223,270 +242,97 @@
 
 
 
- 
-
-
-%----------- SKILLS-----------
-\vspace{-12pt}
-\section{\large{Skills}}
- \begin{itemize}[leftmargin=0.00in, label={}]
-    \small{\item{
-     \textbf{\textsl{Programming Languages:}}{ Python (NumPy, Pandas, Scikit-learn), R, SQL, JavaScript, C++, MATLAB} \\
-
-     \textbf{\textsl{AI \& ML:}}
-     { Predictive ML, Deep Learning (PyTorch, TensorFlow, Keras), LLMs (LangChain), OpenCV, NLP  } \\
-     
-     \textbf{\textsl{Cloud \& Data Tools:}}\small{ Azure (DataBricks, Data Factory, ML Studio), AWS (SageMaker, EC2, S3) , Git, Docker, PySpark}\\
-     
-     \textbf{\textsl{Visualization:}}\small{ Power BI, Plotly Dash, Advanced Excel (VBA, Power Query), d3.js} \
-    }}
- \end{itemize}
- 
-
-
-
-% %----------- EXPERIENCE-----------
-% \vspace{-18pt}
-% \section{\large{Experience}}
-%   \resumeSubHeadingListStart
-%     \resumeSubheading
-%     {Piramal Critical Care (PCC)}
-%     {Bethlehem, PA (Remote, India)}
-%     {Data Science Lead}
-%     {Jan. 2022 -- Jun. 2024}{}
-%     \vspace{6pt}
-%     \resumeItemListStart
-%     \resumeItem{\textbf{Established and led the Data Science \& Analytics Team} at PCC, developing end-to-end data products across Supply Chain, Finance, and Sales to enable data-driven decision making and operational growth.}
-%     \resumeItem{\textbf{Engineered automated Data and ML pipelines} using Python \& SQL, powering over \textbf{30 action-oriented analytics dashboards} across divisions, reducing manual reporting by \textbf{\textsl{85\%}} with real-time validation alerts.}
-%     % \resumeItem{Engineered \textbf{automated Data and ML pipelines} using Python \& SQL for more than \textbf{30 action-driven analytical dashboards} across divisions, reducing manual reporting effort by \textbf{\textsl{85\%}} with real-time validation alerts.}
-%     % \resumeItem{Introduced \textbf{Predictive Modeling} for derived action-items in areas like market share and inventory optimization, achieving \textbf{\textsl{40\%}} improvement in supply chain efficiency by estimating savings in potential write-offs worth around\textbf{\textsl{ \$1.5M}} quarterly.}
-%     \resumeItem{Introduced \textbf{Predictive Modeling} for actionable insights in areas like market share and inventory optimization, resulting in a \textbf{\textsl{40\%}} improvement in supply chain efficiency and an estimated \textbf{\textsl{\$1.2M}} quarterly savings from reduced write-offs.}
-
-    
-%     \resumeItemListEnd
-
-%     \vspace{-5px}
-%     \resumeSubheading
-%     {\textbf{Piramal - Consumer Product Division (CPD)}}{Mumbai, India}
-%     {Data Science Intern (6 months)}{Jul. 2021 -- Dec. 2021}{}
-%     \vspace{7pt}
-%     \resumeItemListStart
-%     % \resumeItem{Developed an FP-Growth based recommendation engine for \textbf{500k+} retailers, leading to \textbf{15\%} market growth quarterly}
-%     % \resumeItem{Built an ensemble ML model (RF + Logistic) for predicting salesmen attrition, improving retention by \textbf{20\%} annually.}
-%     \resumeItem{\textbf{Main Project}: Developed company's first recommendation engine using FP-Growth to optimize product placement.}
-% \resumeItem{Enhanced market penetration of products by \textbf{15\%} quarterly, impacting over \textbf{400k retailers} across India.}
-
-%     \resumeItemListEnd
-% \resumeSubHeadingListEnd
-
-
-
-% % %-----------EXPERIENCE-----------
-% % \section{Experience}
-% %   \resumeSubHeadingListStart
-% %     \resumeSubheading
-% %     {Piramal Critical Care (PCC)}
-% %     {Bethlehem, PA (Remote, India)}
-% %     {Data Science Lead}
-% %     {Jan. 2022 -- Jun. 2024}{}
-% %     % \vspace{1pt}
-
-% %     \resumeItemListStart
-    
-% %     \resumeItem {\textbf{Led the Data Science \& Analytics Team} to drive business growth by integrating data-driven strategies across Supply Chain, Demand Planning, Finance, and Sales Operations.}
-
-% %     \resumeItem{Implemented multiple \textbf{Smart Automation Frameworks}, increasing data accuracy and reducing manual reporting work by \textbf{60\%} through end-to-end automation and advanced visualizations.}
-    
-% %     \resumeItem{Delivered \textbf{Descriptive \& Predictive Analytics} in various projects leveraging ML techniques to uncover sales and supply chain patterns to forecast Market Share trends and prevent potential Material Stock-outs.}
-% %     \resumeItemListEnd
-
-% %     \vspace{-8pt}
-% %     \resumeSubheading
-% %     {\textbf{Piramal - Consumer Product Division (CPD)}}{Mumbai, India}
-% %       {Data Science Intern}{Jul. 2021 -- Dec. 2021}
-% %       {}\vspace{1pt}
-% %       \resumeItemListStart
-% %         \resumeItem{Developed a \textbf{Sales Recommendation Engine} using the FP-Growth Algorithm, optimizing product reach for over 300,000 retailers across India. Implemented a tracking system to refine the recommendations resulting in \textbf{15\% Market Growth}.}
-        
-% %         \resumeItem{Created an Ensemble Predictive Model of Random Forest and Logistic Regression to predict Salesmen's Attrition. Optimized the model to create a feedback mechanism, which improved employee retention rates by \textbf{20\%}.}
-        
-% %     \resumeItemListEnd
-% %   \resumeSubHeadingListEnd
-
-
-% % \vspace{-0.5cm}
-% %-----------PROJECTS-----------
-% \vspace{-18pt}
-% \section{\large{Professional Projects}}
-% \vspace{0.3cm}
-%     \resumeSubHeadingListStart
-%     \resumeProjectHeading
-%           {\textbf{Inventory Management Analytics \& Forecasting}}
-%           {Piramal Critical Care}
-%           {{Machine Learning $|$ Supply Chain \& Finance} }
-%           {Jun. 2023 - Jun. 2024}
-          
-%           \resumeItemListStart
-%             % \resumeItem{Created an inventory usage forecasting model incorporating scenario planning and demand forecasting to reduce monthly provisional write-offs worth around \$2M by optimizing inventory management for aging and expiring stock categories}
-%             \resumeItem{Implemented a time-series forecasting pipeline using \textbf{S-ARIMA} for SKU-level inventory prediction and \textbf{Monte Carlo simulations} for scenario planning, reducing monthly write-offs through optimized aging stock management.}
-%           \resumeItemListEnd
-
-    
-%      \resumeProjectHeading
-%           {\textbf{Product Sales Market Share \& Growth Analytics}}
-%           {Piramal Critical Care}
-%           {Statistical Modeling $|$ Finance \& Sales}
-%           {May. 2023 - Dec. 2023}
-          
-%           \resumeItemListStart
-%             % \resumeItem{Developed market share and growth analytics for the injectable pain market, utilizing advanced statistical metrics to classify markets by competitiveness, growth, and portfolio diversity, driving key long-term business decisions.}
-%             % \resumeItem{Engineering a market analytics framework for the Injectable Pain Segment, using \textbf{segmentation analysis} and \textbf{competitive benchmarking} to evaluate market dynamics, growth opportunities, and portfolio strategy.}
-%              \resumeItem{Engineered a market analytics framework using \textbf{segmentation analysis} and \textbf{competitive benchmarking} to evaluate market dynamics and identify growth opportunities for the Injectable Pain Segment, guiding long-term business strategies.}
-
-%           \resumeItemListEnd
-
-      
-%            \resumeProjectHeading
-%           {\textbf{Sentiment Analysis Modelling of Employee's Feedback Texts}}
-%           {Piramal Critical Care}
-%           {Natural Language Processing $|$ Human Resources}
-%           {Apr. 2022 - Dec. 2022}
-          
-%           \resumeItemListStart
-%             % \resumeItem{Built an ensemble NLP model leveraging VADER Sentiment and TextBlob to analyze employee feedback, identify key development areas, and assign personalized development plans based on sentiment analysis.}
-%             % \resumeItem{Designed an ensemble sentiment analysis pipeline combining \textbf{VADER and TextBlob} to analyze employee feedback, extract actionable insights, and inform personalized development plans.}
-%              \resumeItem{Built an ensemble sentiment analysis pipeline combining \textbf{VADER and TextBlob} to analyze employee feedback, extracting key insights to inform personalized development plans and improve employee satisfaction.}
-
-%           \resumeItemListEnd
-          
-    
-          
-      
-
-
-    
-
-%     % \resumeProjectHeading
-%     %       {\textbf{Application of Swarm Robotics in Object Collection Frameworks}}
-%     %       {BITS Pilani}
-%     %       {Optimization $|$ Robotics}
-%     %       {Jan 2021 - Jun 2021}
-          
-%     %       \resumeItemListStart
-%     %         \resumeItem{Implemented and optimized path planning algorithms for a swarm of drone robots to collaboratively collect various objects in a classroom environment.}
-%     %         % \resumeItem{The swarm motion was controlled via MAVROS command pipeline and simulations were conducted on different kinds of challenging environments such as a large conference room filled with empty/ partially empty cans and bottles,etc. }
-%     %         % \resumeItem{Various Path Planning Algorithms were tested out to find optimal technique based on the distribution spectrum of the objects to be collected.}
-            
-%     %       \resumeItemListEnd
-
-
-    
-%     % \resumeProjectHeading
-%     %       {\textbf{Live Obstacle Tracking for Robotic Reinforcement Learning Systems}}{BITS Pilani}
-%     %       {Artificial Intelligence $|$ Applied AI in Robotics Project}{Aug 2020 - Dec 2020}
-          
-%     %       \resumeItemListStart
-%     %         \resumeItem{Developed a live interpretation of the robotics visual perception with optimal detection of obstacles with the knowledge of the obstacle velocity and acceleration using OpenCV and Gazebo Simulator.}
-%     %       \resumeItemListEnd
-
-%     \resumeProjectHeading
-%           {\textbf{Attrition Prediction Modelling}}
-%           {Piramal CPD}
-%           {Machine Learning $|$ Sales Operations}
-%           {Nov. 2021 - Apr. 2022}
-          
-%           \resumeItemListStart
-%             % \resumeItem{Worked on Predictive Modelling of Sales Employees Attrition using ensemble model of XG-Boost and Logistic Regression based on Performance and other related metrics}
-%             % \resumeItem{Developed an ensemble model of XGBoost and Logistic Regression to predict the attrition of salesmen based on previous attrition data points, their sales performance \& other related metrics.}
-%             % \resumeItem{Prediction Accuracy of 83\% on the focus region of high-performing employees}\\
-%             % \resumeItem{Developed an ensemble ML model of \textbf{XGBoost and Logistic Regression} to predict salesmen attrition, leveraging performance metric and key operational features, achieving an retention ratio of \textbf{93\%} for high-performing employees.}
-%              \resumeItem{Developed a model ensemble of \textbf{XGBoost and Logistic Regression} to predict attrition among sales employees, achieving a \textbf{93\% retention rate} for high-performing employees by leveraging performance metrics and key operational features.}
-    
-%           \resumeItemListEnd
-
-%     % \resumeProjectHeading
-%     %       {\textbf{Emotion Recognition using Genetic Algorithm} } {BITS Pilani}
-%     %       {Artificial Intelligence, Computer Vision $|$ Artificial Intelligence Course}
-%     %       {Jan 2021 - Jun 2021}
-          
-%     %       \resumeItemListStart
-%     %         \resumeItem{Worked on implementing the Genetic Algorithm to identify the emotion of a masked face from a set of emotions using the OpenFace Toolkit for facial landmark detection.}
-%     %       \resumeItemListEnd
-          
-%     \resumeSubHeadingListEnd
-    
-
-
-\newcommand{\resumeProjectItem}[1]{
-  \item[\textbf{-}] \small{#1}
-}
 
 %----------- PROFESSIONAL EXPERIENCE -----------
-\vspace{-20pt}
+\vspace{-10pt}
 \section{\large{Professional Experience}}
-\vspace{2pt}
+\vspace{5pt}
   \resumeSubHeadingListStart
     \resumeSubheading
-    {Piramal Critical Care (PCC)}
-    {Bethlehem, PA (Remote, India)}
     {Data Science Lead}
+    {Bethlehem, PA (Remote, India)}
+    {Piramal Critical Care (PCC)}
     {Jan 2022 -- Jun 2024}{}
     \vspace{4pt}
     \resumeItemListStart
-    \resumeItem{Established and led the Data Science \& Analytics Team, developing end-to-end data products across Supply Chain, Finance, and Sales to enable data-driven decision making and operational growth.}
-    \resumeItem{Engineered automated \textbf{Data and ML pipelines} using Python \& SQL, powering \textbf{over 30} action-oriented analytics dashboards across divisions, reducing manual reporting by \textbf{\textsl{85\%}} with real-time validation alerts.}
-    \resumeItem{Introduced \textbf{Predictive Modeling} for actionable insights for market share and inventory optimization resulting in a \textbf{\textsl{40\%}} improvement in supply chain efficiency and \textbf{\textsl{\$1.2M}} quarterly savings from reduced write-offs.}
+    \resumeItem{Established and \textbf{led the Data Science and Analytics Team}, developing end-to-end data products across Supply Chain, Finance, and Sales to enable data-driven decision making and operational growth.}
+    \resumeItem{Engineered automated Data and ML pipelines using Python and SQL, powering \textbf{over 30} action-oriented analytics reports across business teams, reducing manual reporting effort by \textbf{\textsl{85\%}} with real-time validation alerts.}
+    \resumeItem{Introduced \textbf{Predictive Modeling} and promoting data-driven actionable insights for market share growth and financial inventory management resulting in \textbf{\textsl{40\%}} improvement in supply chain efficiency and \textbf{\textsl{\$1.2M}} quarterly savings.}
     \resumeItemListEnd
     
-    \vspace{-7pt}
-    \hspace{0.38cm}{\small \textbf{\textsl{Project Highlights:}}}
-    \vspace{-7pt}
-    \begin{itemize}[leftmargin=0.27in]
-    \resumeProjectItem{\textbf{Inventory Management Analytics \& Forecasting} \hfill \textsl{Machine Learning $|$ Supply Chain \& Finance}\\
-    \footnotesize{Implemented a time-series forecasting pipeline using \textbf{S-ARIMA} for SKU-level inventory prediction and \textbf{Monte Carlo simulations} for scenario planning, reducing monthly write-offs through optimized aging stock management.}}
+    \vspace{-5pt}
+    % \hspace{0.15cm}
+    {\small \textsl{{Project Highlights:}}}
+    \vspace{-5pt}
+    \begin{itemize}
+    % [leftmargin=0.15in]
+    \resumeProject{Inventory Forecasting}{Implemented a time-series forecasting pipeline for SKU-level inventory forecasting using {\textbf{S-ARIMA}} and {\textbf{Monte Carlo methods}}, reducing monthly write-offs through optimized aging stock management.}
+
     
-    \resumeProjectItem{\textbf{Product Sales Market Share \& Growth Analytics} \hfill \textsl{Statistical Modeling $|$ Finance \& Sales}\\
-    \footnotesize{Engineered a market analytics framework using \textbf{segmentation analysis} and \textbf{competitive benchmarking} to evaluate market dynamics and identify growth opportunities, guiding long-term business strategies.}
-    }
-    \resumeProjectItem{\textbf{Sentiment Analysis Modelling of Employee's Feedback} \hfill \textsl{Natural Language Processing $|$ HR}\\
-    \footnotesize{Built an ensemble sentiment analysis pipeline combining \textbf{VADER and TextBlob} to analyze employee feedback, extracting key insights to inform personalized development plans and improve employee satisfaction.}}
+    \resumeProject{Market Share and Growth Analytics}{Engineered an analytics dashboard using \textbf{segmentation analysis} and \textbf{competitive benchmarking} to evaluate market dynamics and identify growth opportunities, guiding long-term business strategies.}
+    
+    \resumeProject{Individual Development Plans}{Built a NLP sentiment analysis workflow using \textbf{VADER} and \textbf{TextBlob} to analyze employee feedback, extracting key insights to inform personalized development plans and improve employee performance.}
     \end{itemize}
 
-    % \vspace{-3px}
+    \vspace{4pt}
     \resumeSubheading
-    {Piramal - Consumer Product Division (CPD)}
-    {Mumbai, India}
     {Data Science Intern}
+    {Mumbai, India}
+    {Piramal Consumer Healthcare (PCH)}
     {Jul 2021 -- Dec 2021}{}
     \vspace{4pt}
     \resumeItemListStart
-    \resumeItem{Collaborated with cross-functional teams to develop analytical solutions for sales optimization and employee retention.}
+    \resumeItem{Worked with cross-functional teams to develop analytical solutions for sales optimization and employee retention.}
+    \resumeItem{Recognized for exceptional performance, leading to an offer for the Data Science Lead role at Piramal Critical Care.}
     \resumeItemListEnd
-    \vspace{-7pt}
-    \hspace{0.38cm}{\small \textbf{\textsl{Project Highlights:}}}
-    \vspace{-7pt}
-    \begin{itemize}[leftmargin=0.27in]
-    \resumeProjectItem{\textbf{Product Recommendation Engine} \hfill \textsl{Unsupervised Learning $|$ Sales Operations}\\
-    \footnotesize{Developed company's first recommendation engine from scratch using FP-Growth algorithm to optimize product placement, enhancing market penetration by \textbf{15\%} quarterly and impacting over \textbf{400k retailers} across India.}}
+    \vspace{-5pt}
+    {\small \textsl{{Project Highlights:}}}
+    \vspace{-5pt}
+    \begin{itemize}
+    \resumeProject{Product Recommendation Engine}{Developed company's first recommendation engine from scratch using FP-Growth algorithm to optimize product placement, enhancing market penetration by \textbf{15\%} quarterly across \textbf{400k retailers}.}
     
-    \resumeProjectItem{\textbf{Attrition Prediction Modelling} \hfill \textsl{Machine Learning $|$ Sales and HR}\\
-    \footnotesize{Developed a model ensemble of \textbf{XGBoost and Logistic Regression} to predict attrition among sales employees, achieving a \textbf{93\% retention rate} for high-performing employees by leveraging performance metrics and key operational features.}}
+    \resumeProject{Attrition Prediction Modelling}{Developed an ensemble of \textbf{XGBoost and Logistic Regression} to predict salesmen attrition by leveraging performance metrics and key operational features, achieving a \textbf{93\% critical retention rate}.}
     \end{itemize}
 
 \resumeSubHeadingListEnd
 
 
+
+
+%----------- SKILLS-----------
+\vspace{-20pt}
+\section{\large{Skills}}
+\vspace{5pt}
+ \begin{itemize}[leftmargin=0.00in, label={}, itemsep=1pt, parsep=2pt]
+    {\item{
+     {\fontseries{sb}\fontsize{10.5pt}{13pt}\selectfont{Programming Languages:}}
+     \small{Python, R, SQL, JavaScript, C++, MATLAB, Scala, Julia} 
+
+    {\fontseries{sb}\fontsize{10.5pt}{13pt}\selectfont{AI and ML:}}
+     \small{Traditional ML, NLP, Deep Learning (PyTorch, TensorFlow), LLMs (LangChain, HuggingFace), OpenCV } 
+     
+     {\fontseries{sb}\fontsize{10.5pt}{13pt}\selectfont{Cloud Data Tools:}}
+     \small{Azure (DataBricks, Data Factory, ML Studio), AWS (SageMaker, Dask, EC2), Git, Docker, PySpark}
+     
+    {\fontseries{sb}\fontsize{10.5pt}{13pt}\selectfont{Data Visualization:}}
+    \small{Power BI, Plotly Dash, MS Excel (VBA, Power Query), d3.js} 
+    }}
+ \end{itemize}
+
+
+ 
+
 %-----------CERTIFICATIONS-----------
-\vspace{-22pt}
+\vspace{-20pt}
 \section{\large{Certifications}}
 
-\vspace{2px}
+\vspace{5pt}
 \resumeItemListStart
 \resumeItem{AWS Certified Solutions Architect – Associate}
-\hfill{Amazon Web Services (expected Jan 2025)}
+\hfill{Amazon Web Services (expected Mar 2025)}
 
 \vspace{-7pt}
-\resumeItem{AWS Certified Machine Learning – Associate}\hfill{Amazon Web Services (expected Feb 2025)}
+\resumeItem{AWS Certified Machine Learning – Associate}\hfill{Amazon Web Services (expected Apr 2025)}
 \resumeItemListEnd
 
 %-------------------------------------------
