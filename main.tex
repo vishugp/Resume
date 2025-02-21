@@ -1,167 +1,93 @@
-%-------------------------
-% Resume in Latex
-% Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
-%------------------------
-
-\documentclass[letter paper,11pt]{article}
+\documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
-\usepackage{tabularx}
 \usepackage[empty]{fullpage}
-\usepackage{ragged2e}
 \usepackage{titlesec}
-\usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
-\usepackage[english]{babel}
 \usepackage{tabularx}
-\input{glyphtounicode}
 \usepackage{lmodern}
-% \setlist[itemize]{noitemsep}
+\usepackage{ragged2e}
+\input{glyphtounicode}
 
-
+% Page setup
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyfoot{}
+\fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
+% Margins
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
 
-
+% Basic settings
 \urlstyle{same}
-
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0.08003pt}
 \setlength{\footskip}{4.08003pt}
-% \newlist{myEnumerate}{itemize}{6}
-% \setlist[myEnumerate]{nosep,label=\protect\mpbullet}
-% \setlistdepth{6}
 
-% Sections formatting
+% Section formatting
 \titleformat{\section}{
   \vspace{3pt}\scshape\raggedright
 }{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
+% PDF settings
 \pdfgentounicode=1
 
-%-------------------------
 % Custom commands
+
+
 \newcommand{\resumeItem}[1]{
 \justifying
-\vspace{-2.7px}
-  \item{
-    \fontsize{10.3pt}{11pt}\selectfont{#1}
-  }
-}
-
-\newcommand{\resumeProjectItem}[1]{
-  \justifying
-  \vspace{1px}
-  \item[\textbf{-}]\small {\small{#1}}
+  \item{\fontsize{10.3pt}{11pt}\selectfont{#1}}
+  \vspace{-2.7px}
 }
 
 \newcommand{\resumeProject}[2]{
-  \justifying
-  \vspace{1px}
+\justifying
   \item[\textbf{-}]{\small{\fontseries{b}\selectfont{#1}}: {#2}}
 }
 
-\newcommand{\resumeItems}[2]{
-\justifying
-\begin{tabular*}
-  \item\small{
-    {#1} {#2}
-  }
-  \end{tabular*}
-}
-% \newcommand{\resumeSubheading}[4]{
-%   \vspace{-2pt}\item
-%     \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
-%       \textbf{#1} & #2 \\
-%       \textit{\small#3} & \textit{\small #4} \\
-%     \end{tabular*}\vspace{-7pt}
-% }
-
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-8pt}
-}
-
-\newcommand{\resumeSubheading}[4]{%
-% \vspace{0.1cm}%
+\newcommand{\resumeSubheading}[4]{
   \item
-    \begin{tabular*}
-    {1\textwidth}
-    {l@{\extracolsep{\fill}}r}
-      \textbf{\fontsize{11.5pt}{13pt}\selectfont{#1}} & {\fontsize{10.5pt}{13pt}\selectfont{#2}}
-      \\
-      {\fontsize{11pt}{12pt}\selectfont{#3}} & {\fontsize{10.5pt}{13pt}\selectfont{#4}} \\
-      % {\small#5}
-    \end{tabular*}%
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{11.5pt}{13pt}\selectfont{#1}} & {\fontsize{10.5pt}{13pt}\selectfont{#2}} \\
+      {\fontsize{10.5pt}{12pt}\selectfont{#3}} & {\fontsize{10.5pt}{13pt}\selectfont{#4}}
+    \end{tabular*}
   \vspace{-0.5cm}
 }
 
-
-
-
-\newcommand{\resumeProjectHeading}[4]{
-% \vspace{-12pt}
-    \vspace{-10pt}
-    \item
-    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
-      {\small#1} & {\small#2} \\
-      \textit{{\small#3}} & {\small#4}
-    \end{tabular*}\vspace{-14pt}
-}
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}}
-
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
+% List environment commands
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\vspace{1pt}\begin{itemize}}
+\renewcommand\labelitemii{$\vcenter{\hbox{$\bullet$}}$}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}}
 
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 \begin{document}
-%----------HEADING-----------------
 
-\def\name{Vishwanath Guruvayur} % Name Here
+% Header/Contact Information
+\def\name{Vishwanath Guruvayur}
 \def\phone{+1 (571) 602-2034}
 \def\city{Charlottesville, VA}
 \def\email{vishguru2704@gmail.com}
-\def\LinkedIn{vishgp} % linkedin.com/in/______
-\def\github{vishugp} % github username
-\def\role{Data Scientist} % JOB TITLE
-
-
+\def\LinkedIn{vishgp}
+\def\github{vishugp}
+\def\role{Data Scientist}
 
 \begin{center}
-    {\Huge \textbf{\name}} 
+    \href{https://vishugp.github.io/Resume}{\Huge \textbf{\name}}
     \\
-    {\Large{\role}}
+    {\LARGE{\role}}
 \end{center}
 
-\vspace{-48pt}
+\vspace{-42pt}
 
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
     \footnotesize
@@ -170,170 +96,149 @@
         \href{tel:\phone}{\phone}\\
         \href{mailto:\email}{\email}
     \end{minipage} 
-    
     &
-
     \begin{minipage}[t]{0.4\textwidth}\raggedleft
     \footnotesize
-        
         \href{https://github.com/\github}{{github.com/\github}}\\
         \href{https://www.linkedin.com/in/\LinkedIn}{{linkedin.com/in/\LinkedIn}}\\
         \href{https://vishugp.github.io}{{Website: vishugp.github.io}}
     \end{minipage}
 \end{tabular*}
 
-
 %-----------EDUCATION----------
 \vspace{-9pt}
 \section{\large{Education}}
 \vspace{5pt}
-    \resumeSubHeadingListStart
+\resumeSubHeadingListStart
+
+\resumeSubheading
+    {University of Virginia}{Charlottesville, VA}
+    {Master of Science in Data Science}{Jun 2024 -- May 2025}
     
-    \resumeSubheading
-         {University of Virginia}{Charlottesville, VA}
-        {Master of Science in Data Science}{Jun 2024 -- May 2025}{}
-        
-        \vspace{8pt}
-         \fontsize{9.5pt}{11pt}\selectfont{
-         {\fontseries{b}\selectfont{{Capstone Project (sponsored by LMI Inc.)}}}: Implementing Multimodal RAG based LLM for Education \\
-        Research on methods in including multimodal data to develop an Agentic AI-enhanced, context-rich learning experience.
-        }
-        \\
+\vspace{8pt}
+\fontsize{9.5pt}{11pt}\selectfont{
+    {\fontseries{b}\selectfont{{Capstone Project (sponsored by LMI Inc.)}}}: Implementing Multimodal RAG based LLM for Education \\
+    Research on methods in including multimodal data to develop an Agentic AI-enhanced, context-rich learning experience.
+}
 
-        
-        \vspace{2px}
-        \fontsize{9.5pt}{11pt}\selectfont{\fontseries{b}\selectfont{Coursework:}}
-        \fontsize{9.5pt}{11pt}\selectfont{Statistical Machine Learning {\textbullet} 
-        Large Language Models {\textbullet}
-        Deep Learning {\textbullet}
-        Big Data Systems {\textbullet}
-        Bayesian Machine Learning {\textbullet}
-        Applied Data Engineering {\textbullet}
-        Text Analytics {\textbullet}
-        Data Ethics {\textbullet}
-        Data Structures and Algorithms {\textbullet}
-        Linear Models 
-        % \textbullet{}
-        % Time Series Analysis
-        }
+\vspace{-1pt}
+\fontsize{9.5pt}{11pt}\selectfont{\fontseries{b}\selectfont{Coursework:}}
+\fontsize{9.5pt}{11pt}\selectfont{Statistical Machine Learning {\textbullet} 
+Large Language Models {\textbullet}
+Deep Learning {\textbullet}
+NLP and Text Analytics {\textbullet}
+Big Data Systems {\textbullet}
+Bayesian Machine Learning {\textbullet}
+Applied Data Engineering {\textbullet}
+Data Structures and Algorithms {\textbullet}
+Data Ethics }
 
-        \vspace{-1px}
-        {\fontseries{b}\fontsize{9.5pt}{11pt}\selectfont{Activities:}}
-        \fontsize{9.5pt}{11pt}\selectfont{Data Science Ambassador {\textbullet}
-        TA - Statistical Machine Learning {\textbullet}
-        Academic Village Resident (The Range)}
+\vspace{-1px}
+{\fontseries{b}\fontsize{9.5pt}{11pt}\selectfont{Activities:}}
+\fontsize{9.5pt}{11pt}\selectfont{Data Science Ambassador {\textbullet}
+TA - Statistical Machine Learning {\textbullet}
+Academic Village Resident (The Range)}
 
+\resumeSubHeadingListEnd
+\vspace{-3pt}
+\resumeSubHeadingListStart
 
+\resumeSubheading
+    {Birla Institute of Technology and Science (BITS Pilani)}{Hyderabad, India}
+    {Bachelor of Engineering in Mechanical Engineering, Minor in Data Science}{Aug 2018 -- Dec 2021}
 
-     \resumeSubHeadingListEnd 
-     \vspace{-5pt}
-     \resumeSubHeadingListStart   
-     \resumeSubheading
-         {Birla Institute of Technology and Science (BITS Pilani)}{Hyderabad, India}
-         {Bachelor of Engineering in Mechanical Engineering, Minor in Data Science}{Aug 2018 -- Dec 2021}
-
-    
-   
-
- \resumeSubHeadingListEnd 
-%
+\resumeSubHeadingListEnd
 
 \setlist[itemize]{leftmargin=0.38cm}
-
-
-
 
 %----------- PROFESSIONAL EXPERIENCE -----------
 \vspace{-10pt}
 \section{\large{Professional Experience}}
 \vspace{5pt}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-    {Data Science Lead}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+    {Lead Data Scientist}
     {Bethlehem, PA (Remote, India)}
-    {Piramal Critical Care (PCC)}
-    {Jan 2022 -- Jun 2024}{}
-    \vspace{4pt}
-    \resumeItemListStart
-    \resumeItem{Established and \textbf{led the Data Science and Analytics Team}, developing end-to-end data products across Supply Chain, Finance, and Sales to enable data-driven decision making and operational growth.}
-    \resumeItem{Engineered automated Data and ML pipelines using Python and SQL, powering \textbf{over 30} action-oriented analytics reports across business teams, reducing manual reporting effort by \textbf{\textsl{85\%}} with real-time validation alerts.}
-    \resumeItem{Introduced \textbf{Predictive Modeling} and promoting data-driven actionable insights for market share growth and financial inventory management resulting in \textbf{\textsl{40\%}} improvement in supply chain efficiency and \textbf{\textsl{\$1.2M}} quarterly savings.}
-    \resumeItemListEnd
-    
-    \vspace{-5pt}
-    % \hspace{0.15cm}
-    {\small \textsl{{Project Highlights:}}}
-    \vspace{-5pt}
-    \begin{itemize}
-    % [leftmargin=0.15in]
-    \resumeProject{Inventory Forecasting}{Implemented a time-series forecasting pipeline for SKU-level inventory forecasting using {\textbf{S-ARIMA}} and {\textbf{Monte Carlo methods}}, reducing monthly write-offs through optimized aging stock management.}
+    {Piramal Critical Care}
+    {Jan 2022 -- Jun 2024}
+\vspace{4pt}
+\resumeItemListStart
+\resumeItem{Established and \textbf{led the Data Science Team}, integrating analytics into business functions to empower data-driven strategies and enhance decision-making in tackling critical business challenges.}
+\resumeItem{Engineered automated Data and ML pipelines using Python and SQL, streamlining \textbf{over 30} analytics reports and improving reporting efficiency by \textbf{\textsl{85\%}} with intelligent validation alerts.}
+\resumeItem{Introduced \textbf{Predictive Modeling} to generate actionable insights, driving market share growth strategies, enhancing financial decision-making and optimizing supply chain planning, leading to significant operational improvements.}
+\resumeItemListEnd
 
-    
-    \resumeProject{Market Share and Growth Analytics}{Engineered an analytics dashboard using \textbf{segmentation analysis} and \textbf{competitive benchmarking} to evaluate market dynamics and identify growth opportunities, guiding long-term business strategies.}
-    
-    \resumeProject{Individual Development Plans}{Built a NLP sentiment analysis workflow using \textbf{VADER} and \textbf{TextBlob} to analyze employee feedback, extracting key insights to inform personalized development plans and improve employee performance.}
-    \end{itemize}
+\vspace{-3pt}
+{\small \textsl{{Project Highlights:}}}
+\vspace{-5pt}
+\begin{itemize}
+\resumeProject{Inventory Forecasting}{Built a time-series forecasting pipeline using \textbf{S-ARIMA} and \textbf{Monte Carlo simulations}, reducing quarterly write-offs by \textbf{\$1.2M} and improving stock management, leading to a \textbf{40\% boost} in supply chain efficiency.}
 
-    \vspace{4pt}
-    \resumeSubheading
+\resumeProject{Market Share and Growth Analytics}{Engineered an analytics dashboard using \textbf{segmentation analysis} and \textbf{competitive benchmarking} to evaluate market dynamics and identify growth opportunities, guiding long-term business strategies.}
+
+\resumeProject{Individual Development Plans}{Designed an NLP sentiment analysis workflow using \textbf{VADER} and \textbf{TextBlob} to analyze employees' performance reviews, identifying key areas of improvement and informing personalized development plans.}
+\end{itemize}
+
+\vspace{4pt}
+\resumeSubheading
     {Data Science Intern}
     {Mumbai, India}
-    {Piramal Consumer Healthcare (PCH)}
-    {Jul 2021 -- Dec 2021}{}
-    \vspace{4pt}
-    \resumeItemListStart
-    \resumeItem{Worked with cross-functional teams to develop analytical solutions for sales optimization and employee retention.}
-    \resumeItem{Recognized for exceptional performance, leading to an offer for the Data Science Lead role at Piramal Critical Care.}
-    \resumeItemListEnd
-    \vspace{-5pt}
-    {\small \textsl{{Project Highlights:}}}
-    \vspace{-5pt}
-    \begin{itemize}
-    \resumeProject{Product Recommendation Engine}{Developed company's first recommendation engine from scratch using FP-Growth algorithm to optimize product placement, enhancing market penetration by \textbf{15\%} quarterly across \textbf{400k retailers}.}
-    
-    \resumeProject{Attrition Prediction Modelling}{Developed an ensemble of \textbf{XGBoost and Logistic Regression} to predict salesmen attrition by leveraging performance metrics and key operational features, achieving a \textbf{93\% critical retention rate}.}
-    \end{itemize}
+    {Piramal Consumer Healthcare}
+    {Jul 2021 -- Dec 2021}
+\vspace{4pt}
+\resumeItemListStart
+\resumeItem{Worked with cross-functional teams to develop analytical solutions for sales optimization and employee retention.}
+\resumeItem{Recognized for exceptional performance, leading to an offer for the Data Science Lead role at Piramal Critical Care.}
+\resumeItemListEnd
+\vspace{-3pt}
+{\small \textsl{{Project Highlights:}}}
+\vspace{-5pt}
+\begin{itemize}
+\resumeProject{Product Recommendation Engine}{Developed company's first recommendation engine from scratch using FP-Growth algorithm to optimize product placement, enhancing market penetration by \textbf{15\%} quarterly across \textbf{400k retailers}.}
+
+\resumeProject{Salesmen Attrition Prediction}{Built an ensemble model using \textbf{XGBoost and Logistic Regression} to predict salesmen attrition by leveraging performance metrics and key operational features, achieving a \textbf{93\% critical retention rate}.}
+\end{itemize}
 
 \resumeSubHeadingListEnd
 
-
-
-
-%----------- SKILLS-----------
+%----------- SKILLS -----------
 \vspace{-20pt}
 \section{\large{Skills}}
 \vspace{5pt}
- \begin{itemize}[leftmargin=0.00in, label={}, itemsep=1pt, parsep=2pt]
-    {\item{
-     {\fontseries{sb}\fontsize{10.5pt}{13pt}\selectfont{Programming Languages:}}
-     \small{Python, R, SQL, JavaScript, C++, MATLAB, Scala, Julia} 
+\begin{itemize}[leftmargin=0.00in, label={}, itemsep=0pt, parsep=0pt]
+    \item{
+        {\fontseries{b}\fontsize{10.5pt}{13pt}\selectfont{Programming Languages:}}
+        \small{Python, R, SQL, JavaScript, C++, MATLAB, Scala, Julia}
+        }
 
-    {\fontseries{sb}\fontsize{10.5pt}{13pt}\selectfont{AI and ML:}}
-     \small{Traditional ML, NLP, Deep Learning (PyTorch, TensorFlow), LLMs (LangChain, HuggingFace), OpenCV } 
-     
-     {\fontseries{sb}\fontsize{10.5pt}{13pt}\selectfont{Cloud Data Tools:}}
-     \small{Azure (DataBricks, Data Factory, ML Studio), AWS (SageMaker, Dask, EC2), Git, Docker, PySpark}
-     
-    {\fontseries{sb}\fontsize{10.5pt}{13pt}\selectfont{Data Visualization:}}
-    \small{Power BI, Plotly Dash, MS Excel (VBA, Power Query), d3.js} 
-    }}
- \end{itemize}
+    \item{
+        {\fontseries{b}\fontsize{10.5pt}{13pt}\selectfont{AI and ML:}}
+        \small{Traditional ML, NLP, Deep Learning (PyTorch, TensorFlow), LLMs (LangChain, HuggingFace), OpenCV}
+        }
 
+    \item{
+        {\fontseries{b}\fontsize{10.5pt}{13pt}\selectfont{Cloud Data Tools:}}
+        \small{Azure (DataBricks, Data Factory, ML Studio), AWS (SageMaker, Dask, EC2), Git, Docker, PySpark}
+        }
 
- 
+    \item{
+        {\fontseries{b}\fontsize{10.5pt}{13pt}\selectfont{Data Visualization:}}
+        \small{Power BI, Plotly Dash, MS Excel (VBA, Power Query), d3.js, QlikSense}
+        }
+\end{itemize}
 
 %-----------CERTIFICATIONS-----------
-\vspace{-20pt}
+\vspace{-15pt}
 \section{\large{Certifications}}
-
 \vspace{5pt}
 \resumeItemListStart
 \resumeItem{AWS Certified Solutions Architect – Associate}
-\hfill{Amazon Web Services (expected Mar 2025)}
+\hfill{\fontsize{10.3pt}{11pt}\selectfont{Amazon Web Services (expected Mar 2025)}}
 
 \vspace{-7pt}
-\resumeItem{AWS Certified Machine Learning – Associate}\hfill{Amazon Web Services (expected Apr 2025)}
+\resumeItem{AWS Certified Machine Learning – Associate}
+\hfill{\fontsize{10.3pt}{11pt}\selectfont{Amazon Web Services (expected Apr 2025)}}
 \resumeItemListEnd
 
-%-------------------------------------------
 \end{document}
