@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; URL=https://nbviewer.org/github/vishugp/Resume/blob/main/Vishwanath_Guruvayur_Resume_20250401.pdf" />
-    <title>Resume</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            overflow: hidden;
-        }
-        object {
-            width: 100%;
-            height: 100vh;
-            border: none;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redirecting to Vishwanath's Resume...</title>
+  <script>
+    // Dynamically fetch the latest PDF filename and redirect
+    fetch("https://raw.githubusercontent.com/vishugp/Resume/main/latest_resume.txt")
+      .then(response => response.text())
+      .then(fileName => {
+        const trimmed = fileName.trim();
+        const redirectURL = `https://nbviewer.org/github/vishugp/Resume/blob/main/${trimmed}`;
+        window.location.replace(redirectURL);  // Simulates meta refresh
+      })
+      .catch(() => {
+        document.body.innerHTML = "<h2>Failed to redirect. Please try again later.</h2>";
+      });
+  </script>
 </head>
 <body>
-    <object data="Vish_MSDS_Resume.pdf" type="application/pdf"></object>
+  <noscript>
+    <h2>Please enable JavaScript to view the resume.</h2>
+  </noscript>
 </body>
 </html>
