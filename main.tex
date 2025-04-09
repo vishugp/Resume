@@ -46,7 +46,7 @@
 \newcommand{\resumeItem}[1]{
 \justifying
   \item{\fontsize{10.2pt}{11pt}\selectfont{#1}}
-  \vspace{-2.7px}
+  \vspace{-2px}
 }
 
 % \textbf{-}
@@ -58,7 +58,7 @@
 \newcommand{\resumeSubheading}[4]{
   \item
     \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{\fontsize{11.5pt}{13pt}\selectfont{#1}} & {\fontsize{10.2pt}{13pt}\selectfont{#2}} \\
+      \textbf{\fontsize{12pt}{13pt}\selectfont{#1}} & {\fontsize{10.2pt}{13pt}\selectfont{#2}} \\
       {\fontsize{10.2pt}{12pt}\selectfont{#3}} & {\fontsize{10.2pt}{13pt}\selectfont{#4}}
     \end{tabular*}
   \vspace{-0.5cm}
@@ -68,7 +68,7 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \renewcommand\labelitemii{$\vcenter{\hbox{$\bullet$}}$}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\vspace{-3pt}\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}}
 
 \begin{document}
@@ -107,46 +107,49 @@
 \end{tabular*}
 
 %-----------EDUCATION----------
-\vspace{-7pt}
+\vspace{-14pt}
 \section{\large{Education}}
 \vspace{5pt}
 \resumeSubHeadingListStart
 
 \resumeSubheading
     {University of Virginia}{Charlottesville, VA}
-    {Master of Science in Data Science}{Jun 2024 -- May 2025}
-    
-\vspace{8pt}
-\fontsize{10.2pt}{11pt}\selectfont{
-    {\fontseries{}\selectfont{{Capstone Project (sponsored by LMI Inc.)}}}: Implementing Multimodal RAG-based LLM for Education \\
-    Research on methods for including multimodal data to build an Agentic AI-enhanced, context-rich learning experience.
-}
+    {Master of Science in Data Science, GPA: 4.0/4.0}{Jun 2024 -- May 2025}
 
-\vspace{-2pt}
+\vspace{6px}
+% {\fontseries{}\fontsize{10.2pt}{11pt}\selectfont{Activities:}}
+\fontsize{10.2pt}{11pt}\selectfont{TA - Statistical Machine Learning {\textbullet}
+Data Science Ambassador {\textbullet}
+Academic Village Resident (The Range)}
+
+% \vspace{1pt}
+% \fontsize{10.2pt}{11pt}\selectfont{
+%     {\fontseries{}\selectfont{{Capstone Project (sponsored by LMI Inc.)}}}: Implementing Multimodal RAG-based LLM for Education \\
+    
+%     Research on methods for including multimodal data to build an Agentic AI-enhanced, context-rich learning experience.
+% }
+
+% \vspace{-2pt}
 \fontsize{10.2pt}{11pt}\selectfont{\fontseries{}\selectfont{Coursework:}}
-\fontsize{10.2pt}{11pt}\selectfont{Large Language Models {\textbullet}
+\fontsize{10.2pt}{11pt}\selectfont{Large Language Models (LLM) {\textbullet}
 Big Data Systems {\textbullet}
 Statistical Machine Learning {\textbullet} 
 Deep Learning {\textbullet}
 Data Structures and Algorithms {\textbullet}
 Data Engineering {\textbullet}
-NLP and Text Analytics {\textbullet}
+Text Mining {\textbullet}
 Bayesian Machine Learning {\textbullet}
 Data Ethics }
 
-\vspace{-1px}
-{\fontseries{}\fontsize{10.2pt}{11pt}\selectfont{Activities:}}
-\fontsize{9.5pt}{11pt}\selectfont{Data Science Ambassador {\textbullet}
-TA - Statistical Machine Learning {\textbullet}
-Academic Village Resident (The Range)}
+
 
 \resumeSubHeadingListEnd
-\vspace{-9pt}
+\vspace{-7pt}
 \resumeSubHeadingListStart
 
 \resumeSubheading
     {Birla Institute of Technology and Science (BITS Pilani)}{Hyderabad, India}
-    {Bachelor of Engineering in Mechanical Engineering, Minor in Data Science}{Aug 2018 -- Dec 2021}
+    {Bachelor of Engineering in Mechanical Engineering, Minor in Data Science, GPA: 3.8/4.0}{Aug 2018 -- Dec 2021}
 
 \resumeSubHeadingListEnd
 
@@ -155,69 +158,109 @@ Academic Village Resident (The Range)}
 
 
 %----------- PROFESSIONAL EXPERIENCE -----------
-\vspace{-14pt}
+\vspace{-9pt}
 \section{\large{Professional Experience}}
-\vspace{5pt}
+\vspace{3pt}
 \resumeSubHeadingListStart
 
 \resumeSubheading
-    {Lead Data Scientist}
-    {Bethlehem, PA (Remote, India)}
-    {Piramal Critical Care}
-    {Jan 2022 -- Jun 2024}
-\vspace{2pt}
+    {Machine Learning Researcher}
+    {Washington DC-Baltimore Area (Remote)}
+    {LMI Inc. - Capstone Project Sponsor}
+    {Jan 2025 -- May 2025}
+% \vspace{2pt}
+\resumeItem{Developed an \textbf{agentic AI-driven multimodal RAG-based LLM system} to enhance retrieval, summarization, and understanding of educational content for improved student outcomes.}
 \resumeItemListStart
-\resumeItem{\textbf{Established and led the Data Science and Analytics Team}, mentoring a high-performing team of data scientists to integrate advanced analytics with best practices into core business functions.}
 
-\resumeItem{\textbf{Collaborated closely with senior leadership} to translate business challenges into data-driven strategies, improving strategic decision-making and boosting operational efficiency.}
+\resumeItem{Built a \textbf{multimodal embedding pipeline} integrating text, images, slides, and lecture audio transcripts using SentenceTransformers and CLIP enabling aligned content storage and retrieval via Pinecone.}
 
-\resumeItem{Engineered \textsl{\textbf{over 30 Data and ML pipelines}} with Python and SQL for critical analytical reports, reducing manual workload by 85\% and enabling real-time insights \textbf{{for faster, more accurate actionable insights.}}}
+\resumeItem{Implemented and compared \textbf{zero-shot, text and image RAG, and agentic RAG} approaches across LLaMA and GPT-x based models to assess multimodal retrieval and summarization efficacy.}
 
-\resumeItem{Introduced \textbf{Predictive Modeling} for streamlining financial planning, market analysis, and supply chain operations, \textsl{\textbf{driving a 40\% efficiency gain}} in processes and enhancing visibility into inefficiencies and optimization opportunities.}
+\resumeItem{Evaluated retrieval and summarization quality using \textbf{RAGAS scores}, key NLP metrics, and \textbf{human-in-the-loop feedback with attention visualizations}.}
+
 \resumeItemListEnd
 
-\vspace{-16pt}
-{\small \textsl{{Key Project Highlights:}}}
-\vspace{-5pt}
-\begin{itemize}
-\resumeProject{Inventory Forecasting}{Prevented \textbf{\$1.2M in quarterly inventory} losses by increasing depleting stock visibility and optimizing replenishment cycles using an S-ARIMA and Monte Carlo simulation-based time-series forecasting pipeline.}
+\vspace{3pt}
+\resumeSubheading
+    {Lead Data Scientist}
+    {Bethlehem, PA (Remote)}
+    {Piramal Pharma Ltd.}
+    {Jan 2022 -- Jun 2024}
+\vspace{2pt}
+\resumeItem{\textbf{Established and led the Data Science and Analytics Team}, mentoring a high-performing team of data scientists to integrate advanced analytics with best practices into core business functions.}
+\resumeItemListStart
+\resumeItem{\textbf{Prevented \$1.2M in quarterly inventory losses} by designing a time-series forecasting system using \textbf{S-ARIMA and Monte Carlo simulations} to improve depleting stock visibility and optimize replenishment cycles.}
 
-\resumeProject{Market Share and Growth Analytics}{Created an executive dashboard employing competitive benchmarking and segmentation analysis, identifying growth opportunities, \textbf{influencing long-term strategic planning at the C-suite level.}}
+% \resumeItem{Engineered \textsl{\textbf{over 30 Data and ML pipelines}} with Python and SQL for critical analytical reports, reducing manual workload by 85\% and enabling real-time insights \textbf{{for faster, more accurate actionable insights.}}}
+\resumeItem{Engineered \textbf{over 30 data analytics pipelines}, reducing reporting turnaround across business functions from monthly to daily and \textbf{improving manual reporting workload by 85\%.}}
 
-\resumeProject{Individual Development Plans}{Designed an NLP sentiment analysis model using VADER and TextBlob to analyze performance reviews, identifying key improvement areas and \textbf{informing HR leadership’s talent development strategies.}}
-\end{itemize}
+% \resumeItem{Built an NLP model with VADER and TextBlob to analyze employee performance reviews, enabling HR to assign targeted development plans and improve employee retention.}
+\resumeItem{\textbf{Enabled personalized employee development strategies} by analyzing performance reviews using Sentiment Analysis model built with VADER and TextBlob.}
 
-\vspace{-3pt}
+
+
+% \resumeItem{Created end-to-end executive dashboards employing competitive benchmarking and segmentation analysis, identifying growth opportunities, \textbf{influencing long-term strategic planning at the C-suite level.}}
+\resumeItem{Developed end-to-end executive dashboards using market data, competitive benchmarking, and segmentation analysis, identifying growth opportunities and \textbf{influencing strategic planning at the CFO and CEO levels.}}
+
+% \resumeItem{\textbf{Collaborated closely with senior leadership} to translate business challenges into data-driven strategies, improving strategic decision-making and boosting operational efficiency.}
+% \resumeItem{Built an \textbf{NLP sentiment analysis model} using VADER and TextBlob to analyze employee performance reviews, identifying key improvement areas and shaping HR leadership’s talent development and retention strategies.}
+
+
+
+% \resumeItem{Introduced \textbf{Predictive Modeling} for streamlining financial planning, market analysis, and supply chain operations, \textsl{\textbf{driving a 40\% efficiency gain}} in processes and enhancing visibility into inefficiencies and optimization opportunities.}
+\resumeItemListEnd
+
+% \vspace{-16pt}
+% {\small \textsl{{Key Project Highlights:}}}
+% \vspace{-5pt}
+% \begin{itemize}
+% \resumeProject{Inventory Forecasting}{Prevented \textbf{\$1.2M in quarterly inventory} losses by increasing depleting stock visibility and optimizing replenishment cycles using an S-ARIMA and Monte Carlo simulation-based time-series forecasting pipeline.}
+
+% \resumeProject{Market Share and Growth Analytics}{Created an executive dashboard employing competitive benchmarking and segmentation analysis, identifying growth opportunities, \textbf{influencing long-term strategic planning at the C-suite level.}}
+
+% \resumeProject{Individual Development Plans}{Designed an NLP sentiment analysis model using VADER and TextBlob to analyze performance reviews, identifying key improvement areas and \textbf{informing HR leadership’s talent development strategies.}}
+% \end{itemize}
+
+\vspace{3pt}
 \resumeSubheading
     {Data Science Intern}
     {Mumbai, India}
-    {Piramal Consumer Healthcare}
+    {Piramal Pharma Ltd.}
     {Jul 2021 -- Dec 2021}
 \vspace{2pt}
+\resumeItem{Intern in the Consumer Products Division, working on data-driven initiatives with direct business impact.}
 \resumeItemListStart
-\resumeItem{Worked with cross-functional teams to provide analytical solutions for sales optimization and employee retention.}
-\resumeItem{\textbf{Recognized for exceptional performance}, leading to an offer for a Lead role at Piramal Critical Care.}
-\resumeItemListEnd
-\vspace{-3pt}
-{\small \textsl{{Key Project Highlights:}}}
-\vspace{-5pt}
-\begin{itemize}
-\resumeProject{Product Recommendation Engine}{Developed the company's first recommendation engine pipeline from scratch based on the FP-Growth algorithm, achieving \textsl{\textbf{15\% increase}} in market penetration quarterly across \textbf{\textsl{400k retailers}}.}
 
-\resumeProject{Salesmen Attrition Prediction}{Built an ensemble model utilizing \textbf{XGBoost and Logistic Regression} to predict salesmen attrition by leveraging performance metrics and operational features, achieving a \textsl{\textbf{93\% critical retention rate}.}}
-\end{itemize}
+\resumeItem{Achieved a \textbf{15\% quarterly increase in market penetration across 400,000 retailers} by building a product recommendation engine implementing the FP-Growth algorithm from scratch.}
+\resumeItem{\textbf{Boosted high-performing sales reps retention rates to 93\%} by developing an attrition prediction model using XGBoost and Logistic Regression on historic sales performance and attrition data.}
+\resumeItem{Recognized for impact and \textbf{offered a role to build and lead a new analytics team} for the Critical Care Division.}
+\resumeItemListEnd
+% \vspace{-3pt}
+% {\small \textsl{{Key Project Highlights:}}}
+% \vspace{-5pt}
+% \begin{itemize}
+% \resumeProject{Product Recommendation Engine}{Developed the company's first recommendation engine pipeline from scratch based on the FP-Growth algorithm, achieving \textsl{\textbf{15\% increase}} in market penetration quarterly across \textbf{\textsl{400k retailers}}.}
+
+% \resumeProject{Salesmen Attrition Prediction}{Built an ensemble model utilizing \textbf{XGBoost and Logistic Regression} to predict salesmen attrition by leveraging performance metrics and operational features, achieving a \textsl{\textbf{93\% critical retention rate}.}}
+% \end{itemize}
 
 \resumeSubHeadingListEnd
 
 %----------- SKILLS -----------
-\vspace{-18pt}
+\vspace{-15pt}
 \section{\large{Skills}}
 \vspace{3pt}
 \begin{itemize}[leftmargin=0.00in, label={}, itemsep=0pt, parsep=0pt]
     \item{
         {\fontseries{b}\fontsize{10.2pt}{13pt}\selectfont{Programming Languages:}}
-        \small{Python, R, SQL, JavaScript, C++, MATLAB, Scala, Julia}
+        \small{Python, R, SQL}
         }
+        % /, JavaScript, C++, MATLAB, Scala, Julia
+
+    % \item{
+    %     {\fontseries{b}\fontsize{10.2pt}{13pt}\selectfont{Traditional ML:}}
+    %     \small{Regression and GLMs, Clustering, Market Ba}
+    %     }
 
     \item{
         {\fontseries{b}\fontsize{10.2pt}{13pt}\selectfont{AI and ML:}}
@@ -226,13 +269,17 @@ Academic Village Resident (The Range)}
 
     \item{
         {\fontseries{b}\fontsize{10.2pt}{13pt}\selectfont{Cloud Data Tools:}}
-        \small{Azure (DataBricks, Data Factory, ML Studio), AWS (SageMaker, Dask, EC2), Git, Docker, PySpark}
+        \small{Microsoft Azure (DataBricks, Data Factory, ML Studio), AWS (SageMaker, Dask, EC2), Git, Docker}
         }
 
     \item{
         {\fontseries{b}\fontsize{10.2pt}{13pt}\selectfont{Data Visualization:}}
-        \small{Power BI, Plotly Dash, MS Excel (VBA, Power Query), d3.js, QlikSense}
+        \small{Power BI, Plotly Dash, d3.js, QlikSense}
         }
+    \item{
+    {\fontseries{b}\fontsize{10.2pt}{13pt}\selectfont{Interests and Hobbies:}}
+    \small{Singing and Music, Card Games}
+    }
 \end{itemize}
 
 %-----------CERTIFICATIONS-----------
