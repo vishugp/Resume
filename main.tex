@@ -19,11 +19,11 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\oddsidemargin}{-0.65in}
+\addtolength{\evensidemargin}{-0.25in}
+\addtolength{\textwidth}{1.25in}
+\addtolength{\topmargin}{-.75in}
+\addtolength{\textheight}{1.5in}
 
 % Basic settings
 \urlstyle{same}
@@ -34,7 +34,8 @@
 
 % Section formatting
 \titleformat{\section}{
-  \vspace{3pt}\scshape\raggedright
+  \vspace{3pt}
+  \scshape\raggedright
 }{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
 
 % PDF settings
@@ -45,21 +46,21 @@
 
 \newcommand{\resumeItem}[1]{
 \justifying
-  \item{\fontsize{10.2pt}{11pt}\selectfont{#1}}
+  \item{\small{#1}}
   \vspace{-2px}
 }
 
 % \textbf{-}
 \newcommand{\resumeProject}[2]{
 \justifying
-  \item{\small{\fontseries{b}\fontsize{10.2pt}{11pt}\selectfont{#1}}: {#2}}
+  \item{\small{\fontseries{b}\fontsize{10pt}{11pt}\selectfont{#1}}: {#2}}
 }
 
 \newcommand{\resumeSubheading}[4]{
   \item
     \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{\fontsize{12pt}{13pt}\selectfont{#1}} & {\fontsize{10.2pt}{13pt}\selectfont{#2}} \\
-      {\fontsize{10.2pt}{12pt}\selectfont{#3}} & {\fontsize{10.2pt}{13pt}\selectfont{#4}}
+      \textbf{\fontsize{12pt}{13pt}\selectfont{#1}} & {\fontsize{10pt}{13pt}\selectfont{#2}} \\
+      {\fontsize{10pt}{12pt}\selectfont{#3}} & {\fontsize{10pt}{13pt}\selectfont{#4}}
     \end{tabular*}
   \vspace{-0.5cm}
 }
@@ -74,7 +75,7 @@
 \begin{document}
 
 % Header/Contact Information
-\def\name{Vishwanath Guruvayur}
+\def\name{Vishwanath Guruvayur (Vish)}
 \def\phone{+1 (571) 602-2034}
 \def\city{Charlottesville, VA}
 \def\email{vishguru2704@gmail.com}
@@ -82,13 +83,16 @@
 \def\github{vishugp}
 \def\role{Data Scientist}
 
+
 \begin{center}
-    \href{https://vishugp.github.io/Resume}{\Huge \textbf{\name}}
-    \\
-    {\LARGE{\role}}
+
+    % \href{https://vishugp.github.io/Resume}
+    {\huge \textbf{\name}}\\
+    \vspace{0.15cm}
+    {\huge{\role}}
 \end{center}
 
-\vspace{-44pt}
+\vspace{-45pt}
 
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
     \footnotesize
@@ -107,8 +111,8 @@
 \end{tabular*}
 
 %-----------EDUCATION----------
-\vspace{-14pt}
-\section{\large{Education}}
+\vspace{-9pt}
+\section{\Large{Education}}
 \vspace{5pt}
 \resumeSubHeadingListStart
 
@@ -118,16 +122,19 @@
 
 \vspace{6px}
 % {\fontseries{}\fontsize{10.2pt}{11pt}\selectfont{Activities:}}
-\fontsize{10pt}{11pt}\selectfont{Teaching Assistant - Statistical Machine Learning {\textbullet}
+\small{
+Teaching Assistant - Statistical Machine Learning {\textbullet}
 Data Science Ambassador {\textbullet}
-Academic Village Resident (The Range)}\\
+Academic Village Resident (The Range)\\
+
 \vspace{2pt}
-\fontsize{10pt}{10pt}\selectfont{\fontseries{}\selectfont{Coursework:}}
-\fontsize{10pt}{10pt}\selectfont{Large Language Models (LLM) {\textbullet}
+
+Coursework: 
+Large Language Models (LLMs) {\textbullet}
 Statistical and Bayesian Machine Learning (ML){\textbullet} 
-Deep Learning (DL) {\textbullet}
-Big Data Systems (Cloud){\textbullet}
-Text Mining (NLP){\textbullet}
+Deep Learning {\textbullet}
+Big Data Systems {\textbullet}
+Natural Language Processing (NLP){\textbullet}
 Data Structures and Algorithms {\textbullet}
 Data Engineering {\textbullet}
 % Bayesian Machine Learning {\textbullet}
@@ -136,9 +143,8 @@ Data Ethics }
 
 
 \resumeSubHeadingListEnd
-\vspace{-5pt}
+\vspace{-9pt}
 \resumeSubHeadingListStart
-
 \resumeSubheading
     {Birla Institute of Technology and Science (BITS Pilani)}{Hyderabad, India}
     {Bachelor of Engineering in Mechanical Engineering, Minor in Data Science, GPA: 3.8/4.0}{Aug 2018 -- Dec 2021}
@@ -150,8 +156,8 @@ Data Ethics }
 
 
 %----------- PROFESSIONAL EXPERIENCE -----------
-\vspace{-12pt}
-\section{\large{Experience}}
+\vspace{-9pt}
+\section{\Large{Experience}}
 \vspace{3pt}
 \resumeSubHeadingListStart
 
@@ -161,25 +167,25 @@ Data Ethics }
     {LMI Inc. (Capstone Project Sponsor)}
     {Nov 2024 -- May 2025}
 \vspace{2pt}
-\resumeItem{Developed an \textbf{Agentic AI-driven multimodal RAG-based LLM system} to research the impact of multimodal capabilities on improving educational content retrieval, summarization and comprehension.}
+\resumeItem{Developed an \textbf{Agentic AI-driven Multimodal RAG-based LLM system} to research the impact of multimodal capabilities on improving educational content retrieval, summarization and comprehension.}
 \resumeItemListStart
 
 \resumeItem{Built a \textbf{multimodal embedding pipeline} using SentenceTransformers and CLIP embeddings, integrating diverse data sources (text, images, PDFs, lecture slides, and audio) for scalable content retrieval via Pinecone.}
 
-\resumeItem{Evaluated the performance of \textbf{zero-shot, text, and image-based RAG} approaches across LLaMA and GPT-4 models, identifying improvements in retrieval accuracy and summarization quality.}
+\resumeItem{Evaluated the performance of \textbf{Zero-Shot, Text, and Image-based RAG} approaches across LLaMA and GPT-4 models, identifying improvements in retrieval accuracy and summarization quality.}
 
 \resumeItem{Applied the \textbf{RAGAS framework and key NLP metrics} to assess system efficacy, with human-in-the-loop feedback and attention visualizations to validate improvements in multimodal understanding.}
 
 \resumeItemListEnd
 
-\vspace{4pt}
+\vspace{2pt}
 \resumeSubheading
     {Senior Data Scientist}
     {Bethlehem, PA (Remote, Mumbai Office)}
     {Piramal Pharma Ltd.}
     {Jan 2022 -- Jun 2024}
 \vspace{2pt}
-\resumeItem{\textbf{Established and led the Data Science and Analytics Team} for the Critical Care Division, mentoring a high-performing team of data scientists and integrating advanced analytics with best practices into core business functions.}
+\resumeItem{\textbf{Established and led the Data Science and Analytics Team} for the Critical Care Division, mentoring a high-performing team of 3 data scientists and integrating advanced analytics with best practices into core business functions.}
 \resumeItemListStart
 \resumeItem{\textbf{Prevented \$1.2M in quarterly inventory losses} by designing a time-series forecasting system using S-ARIMA and Monte Carlo simulations to improve depleting stock visibility and optimize replenishment cycles.}
 
@@ -215,7 +221,7 @@ Data Ethics }
 % \resumeProject{Individual Development Plans}{Designed an NLP sentiment analysis model using VADER and TextBlob to analyze performance reviews, identifying key improvement areas and \textbf{informing HR leadership’s talent development strategies.}}
 % \end{itemize}
 
-\vspace{3pt}
+\vspace{2pt}
 \resumeSubheading
     {Data Science Intern}
     {Mumbai, India}
@@ -241,8 +247,8 @@ Data Ethics }
 \resumeSubHeadingListEnd
 
 %----------- SKILLS -----------
-\vspace{-18pt}
-\section{\large{Skills}}
+\vspace{-15pt}
+\section{\Large{Skills}}
 \vspace{3pt}
 \begin{itemize}[leftmargin=0.00in, label={}, itemsep=0pt, parsep=0pt]
     \item{
@@ -265,22 +271,22 @@ Data Ethics }
     %     }
 
     \item{
-        {\fontseries{b}\fontsize{10.2pt}{13pt}\selectfont{AI and ML:}}
+        {\fontseries{b}\fontsize{10pt}{13pt}\selectfont{AI and ML:}}
         \small{Traditional ML (Scikit-Learn), Deep Learning (PyTorch, TensorFlow), LLMs (LangChain, HuggingFace)}
         }
 
     \item{
-        {\fontseries{b}\fontsize{10.2pt}{13pt}\selectfont{Cloud Data Tools:}}
+        {\fontseries{b}\fontsize{10pt}{13pt}\selectfont{Cloud Data Tools:}}
         \small{Microsoft Azure (DataBricks, Data Factory, ML Studio), AWS (SageMaker, Dask, EC2), Git, Docker}
         }
 
     \item{
-        {\fontseries{b}\fontsize{10.2pt}{13pt}\selectfont{Data Visualization:}}
+        {\fontseries{b}\fontsize{10pt}{13pt}\selectfont{Data Visualization:}}
         \small{Power BI, Plotly Dash, d3.js, QlikSense}
         }
     \item{
-    {\fontseries{b}\fontsize{10.2pt}{13pt}\selectfont{Interests and Hobbies:}}
-    \small{Singing and Music, Card Games, Badminton, Robotics}
+    {\fontseries{b}\fontsize{10pt}{13pt}\selectfont{Interests and Hobbies:}}
+    \small{Singing and enjoying Music - \href{https://vishuragams.pages.dev}{\underline{Carnatic Ragas}}, \href{https://vishugp.github.io/Thuruppu/}{{playing Card games}} and Badminton, Robotics}
     }
 \end{itemize}
 
