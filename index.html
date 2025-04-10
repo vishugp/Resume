@@ -6,11 +6,11 @@
   <title>Redirecting to Vishwanath's Resume...</title>
   <script>
     // Dynamically fetch the latest PDF filename and redirect
-    fetch("https://raw.githubusercontent.com/vishugp/VishResume/main/latest_resume.txt")
+    fetch("https://raw.githubusercontent.com/vishugp/Resume/main/latest_resume.txt")
       .then(response => response.text())
       .then(fileName => {
         const trimmed = fileName.trim();
-        const redirectURL = `https://nbviewer.org/github/vishugp/VishResume/blob/main/${trimmed}`;
+        const redirectURL = `https://nbviewer.org/github/vishugp/Resume/blob/main/${trimmed}`;
         window.location.replace(redirectURL);  // Simulates meta refresh
       })
       .catch(() => {
