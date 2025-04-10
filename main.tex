@@ -55,14 +55,14 @@
 % \textbf{-}
 \newcommand{\resumeProject}[2]{
 \justifying
-  \item{\small{\fontseries{b}\fontsize{10pt}{11pt}\selectfont{#1}}: {#2}}
+  \item{\small{\textbf{\small{#1}}}: {#2}}
 }
 
 \newcommand{\resumeSubheading}[4]{
   \item
     \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{\fontsize{12pt}{13pt}\selectfont{#1}} & {\fontsize{10pt}{13pt}\selectfont{#2}} \\
-      {\fontsize{10pt}{12pt}\selectfont{#3}} & {\fontsize{10pt}{13pt}\selectfont{#4}}
+      \textbf{\fontsize{12.5pt}{11pt}\selectfont{#1}} & {\small{#2}} \\
+      {\textsl{\small{#3}}} & {\textsl{\small{#4}}}
     \end{tabular*}
   \vspace{-0.5cm}
 }
@@ -71,13 +71,16 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \renewcommand\labelitemii{$\vcenter{\hbox{$\bullet$}}$}
-\newcommand{\resumeItemListStart}{\vspace{-3pt}\begin{itemize}}
+\newcommand{\resumeItemListStart}{
+  \vspace{-3pt}
+  \begin{itemize}[leftmargin=0.2in, label=\textbullet]
+}
 \newcommand{\resumeItemListEnd}{\end{itemize}}
 
 \begin{document}
 
 % Header/Contact Information
-\def\name{Vishwanath Guruvayur (Vish)}
+\def\name{Vishwanath (Vish) Guruvayur}
 \def\phone{+1 (571) 602-2034}
 \def\city{Charlottesville, VA}
 \def\email{vishguru2704@gmail.com}
@@ -131,7 +134,7 @@ Academic Village Resident (The Range)\\
 
 
 
-Coursework: 
+\textbf{Coursework:}
 Large Language Models (LLMs) {\textbullet}
 Statistical and Bayesian Machine Learning (ML){\textbullet} 
 Deep Learning {\textbullet}
@@ -145,7 +148,7 @@ Data Ethics }
 
 
 \resumeSubHeadingListEnd
-\vspace{-5pt}
+\vspace{-4pt}
 \resumeSubHeadingListStart
 \resumeSubheading
     {Birla Institute of Technology and Science (BITS Pilani)}{Hyderabad, India}
@@ -166,17 +169,19 @@ Data Ethics }
 \resumeSubheading
     {Machine Learning Researcher}
     {Tysons, VA (Remote)}
-    {LMI Inc. (Capstone Project Sponsor)}
+    {LMI Inc. (Capstone Project)}
     {Nov 2024 -- May 2025}
 \vspace{1pt}
 \resumeItem{Developed an \textbf{Agentic AI-driven Multimodal RAG-based LLM system} to research the impact of multimodal capabilities on improving educational content retrieval, summarization and comprehension.}
 \resumeItemListStart
 
-\resumeItem{Built a multimodal embedding pipeline using SentenceTransformers and CLIP embeddings, \textbf{integrating diverse data sources} (text, images, PDFs, lecture slides, and audio) for scalable content retrieval via Pinecone.}
+% \resumeItem{Built a multimodal embedding pipeline using SentenceTransformers and CLIP embeddings indexing over 5,000 vectorized content chunks, \textbf{from diverse data sources} (text, images, PDFs, lecture slides, and audio), enabling efficient semantic content retrieval via Pinecone.}
 
-\resumeItem{Evaluated the performance of \textbf{Zero-Shot, Text, and Image-based RAG} approaches across LLaMA and GPT-4 models, identifying improvements in retrieval accuracy and summarization quality.}
+\resumeItem{Built a multimodal embedding pipeline with SentenceTransformers and CLIP, indexing \textbf{over 5,000 data chunks from diverse sources} (text, images, PDFs, lecture slides, and audio transcripts) for efficient semantic search via Pinecone.}
 
-\resumeItem{Applied the \textbf{RAGAS framework and key NLP metrics} to assess system efficacy, with human-in-the-loop feedback and attention visualizations to validate improvements in multimodal understanding.}
+\resumeItem{Benchmarked 3 Major RAG Frameworks - \textbf{(Zero-Shot, Text, and Image-aided RAG)} identifying improvements in retrieval accuracy and summarization quality across LLaMA and GPT-4 models.}
+
+\resumeItem{Implemented the RAGAS framework and key NLP metrics  to assess system efficacy with \textbf{100+ pre-classified question sets} with varied levels of specificity, with attention visualizations to validate multimodal understanding.}
 
 \resumeItemListEnd
 
@@ -201,7 +206,7 @@ Data Ethics }
 \resumeItem{Developed end-to-end executive dashboards integrating market data, competitive benchmarking, and segmentation analysis \textbf{adopted by the CFO to steer data-driven strategic decisions and growth initiatives.}}
 
 % \resumeItem{Built an NLP model with VADER and TextBlob to analyze employee performance reviews, enabling HR to assign targeted development plans and improve employee retention.}
-\resumeItem{\textbf{Enabled personalized employee development strategies} by analyzing performance reviews using Text Sentiment Analysis model built with VADER and TextBlob.}
+\resumeItem{Enabled personalized employee growth strategies by analyzing performance reviews using Text Sentiment Analysis model built with VADER and TextBlob, \textbf{driving CHRO's talent development strategies.}}
 
 
 % \resumeItem{\textbf{Collaborated closely with senior leadership} to translate business challenges into data-driven strategies, improving strategic decision-making and boosting operational efficiency.}
@@ -288,7 +293,7 @@ Data Ethics }
         }
     \item{
     {\fontseries{b}\fontsize{10pt}{13pt}\selectfont{Interests and Hobbies:}}
-    \small{Singing and enjoying Music - \href{https://vishuragams.pages.dev}{\underline{Carnatic Ragas}}, \href{https://vishugp.github.io/Thuruppu/}{{playing Card games}} and Badminton, Robotics}
+    \small{Singing and enjoying music - \href{https://vishuragams.pages.dev}{\underline{Carnatic Ragas}}, playing \href{https://vishugp.github.io/Thuruppu/}{\underline{card games}} and badminton, robotics}
     }
 \end{itemize}
 
