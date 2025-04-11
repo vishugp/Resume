@@ -8,7 +8,9 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 \usepackage{tabularx}
-\usepackage{lmodern}
+% \usepackage{charter}
+\usepackage{mathpazo}
+% \usepackage{newtxtext,newtxmath}
 \usepackage{ragged2e}
 \input{glyphtounicode}
 
@@ -24,7 +26,7 @@
 % \addtolength{\textwidth}{1.35in}
 % \addtolength{\topmargin}{-0.75in}
 % \addtolength{\textheight}{1.5in}
-\usepackage[margin=0.42in]{geometry}
+\usepackage[margin=0.4in]{geometry}
 
 
 % Basic settings
@@ -52,17 +54,17 @@
   \vspace{-2px}
 }
 
-% \textbf{-}
-\newcommand{\resumeProject}[2]{
-\justifying
-  \item{\small{\textbf{\small{#1}}}: {#2}}
-}
+% % \textbf{-}
+% \newcommand{\resumeProject}[2]{
+% \justifying
+%   \item{\small{\textbf{\small{#1}}}: {#2}}
+% }
 
 \newcommand{\resumeSubheading}[4]{
   \item
     \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{\fontsize{12.5pt}{11pt}\selectfont{#1}} & {\small{#2}} \\
-      {\textsl{\small{#3}}} & {\textsl{\small{#4}}}
+      \textbf{\large{#1}} & {{#2}} \\
+      {\textsl{{#3}}} & {\textsl{{#4}}}
     \end{tabular*}
   \vspace{-0.5cm}
 }
@@ -92,7 +94,7 @@
 \begin{center}
 
     % \href{https://vishugp.github.io/Resume}
-    {\huge \textbf{\name}}\\
+    {\huge \textbf{\fontsize{24pt}{13pt}\selectfont{\name}}}\\
     \vspace{0.15cm}
     {\huge{\role}}
 \end{center}
@@ -127,20 +129,20 @@
 
 \vspace{6px}
 % {\fontseries{}\fontsize{10.2pt}{11pt}\selectfont{Activities:}}
-\small{
+\footnotesize{
 Teaching Assistant - Statistical Machine Learning {\textbullet}
 Data Science Ambassador {\textbullet}
 Academic Village Resident (The Range)\\
 
 
 
-\textbf{Coursework:}
+\textbf{\textsl{Coursework:}}
 Large Language Models (LLMs) {\textbullet}
-Statistical and Bayesian Machine Learning (ML){\textbullet} 
-Deep Learning {\textbullet}
-Big Data Systems {\textbullet}
-Natural Language Processing (NLP){\textbullet}
-Data Structures and Algorithms {\textbullet}
+Statistical and Bayesian Machine Learning (ML) {\textbullet} 
+Big Data Systems (Cloud Architecture) {\textbullet}
+Deep Learning (DL) {\textbullet}
+Natural Language Processing (NLP) {\textbullet}
+Data Structures and Algorithms (DSA) {\textbullet}
 Data Engineering {\textbullet}
 % Bayesian Machine Learning {\textbullet}
 Data Ethics }
@@ -151,7 +153,7 @@ Data Ethics }
 \vspace{-4pt}
 \resumeSubHeadingListStart
 \resumeSubheading
-    {Birla Institute of Technology and Science (BITS Pilani)}{Hyderabad, India}
+    {Birla Institute of Technology and Science \normalsize{(BITS Pilani)}}{Hyderabad, India}
     {Bachelor of Engineering in Mechanical Engineering, Minor in Data Science, GPA: 3.8/4.0}{Aug 2018 -- Dec 2021}
 
 \resumeSubHeadingListEnd
@@ -169,19 +171,19 @@ Data Ethics }
 \resumeSubheading
     {Machine Learning Researcher}
     {Tysons, VA (Remote)}
-    {LMI Inc. (Capstone Project)}
+    {LMI Inc.}
     {Nov 2024 -- May 2025}
 \vspace{1pt}
-\resumeItem{Developed an \textbf{Agentic AI-driven Multimodal RAG-based LLM system} to research the impact of multimodal capabilities on improving educational content retrieval, summarization and comprehension.}
+\resumeItem{\textsl{Capstone Project:} Developed an \textbf{Agentic AI-driven Multimodal RAG-based LLM system} to research the impact of multimodal capabilities on improving educational content retrieval, summarization and comprehension.}
 \resumeItemListStart
 
 % \resumeItem{Built a multimodal embedding pipeline using SentenceTransformers and CLIP embeddings indexing over 5,000 vectorized content chunks, \textbf{from diverse data sources} (text, images, PDFs, lecture slides, and audio), enabling efficient semantic content retrieval via Pinecone.}
 
-\resumeItem{Built a multimodal embedding pipeline with SentenceTransformers and CLIP, indexing \textbf{over 5,000 data chunks from diverse sources} (text, images, PDFs, lecture slides, and audio transcripts) for efficient semantic search via Pinecone.}
+\resumeItem{Built a multimodal embedding pipeline with Sentence Transformers and CLIP, indexing \textbf{over 5,000 data chunk vectors from diverse media} (text, images, PDFs, lecture slides, and audio transcripts) for efficient semantic search via Pinecone.}
 
 \resumeItem{Benchmarked 3 Major RAG Frameworks - \textbf{(Zero-Shot, Text, and Image-aided RAG)} identifying improvements in retrieval accuracy and summarization quality across LLaMA and GPT-4 models.}
 
-\resumeItem{Implemented the RAGAS framework and key NLP metrics  to assess system efficacy with \textbf{100+ pre-classified question sets} with varied levels of specificity, with attention visualizations to validate multimodal understanding.}
+\resumeItem{Implemented the RAGAS framework and key NLP metrics  to assess system efficacy with \textbf{over 100 pre-classified question sets} with varied levels of specificity, with attention visualizations to validate multimodal understanding.}
 
 \resumeItemListEnd
 
@@ -203,7 +205,7 @@ Data Ethics }
 
 % \resumeItem{Created end-to-end executive dashboards employing competitive benchmarking and segmentation analysis, identifying growth opportunities, \textbf{influencing long-term strategic planning at the C-suite level.}}
 % \resumeItem{Developed end-to-end executive dashboards using market data, competitive benchmarking and segmentation analysis, identifying growth opportunities and \textbf{informing strategic planning at the CFO and CEO levels.}}
-\resumeItem{Developed end-to-end executive dashboards integrating market data, competitive benchmarking, and segmentation analysis \textbf{adopted by the CFO to steer data-driven strategic decisions and growth initiatives.}}
+\resumeItem{Developed detailed end-to-end executive dashboards integrating market data, competitive benchmarking and segmentation analysis \textbf{adopted by the CFO to steer data-driven strategic decisions and growth initiatives.}}
 
 % \resumeItem{Built an NLP model with VADER and TextBlob to analyze employee performance reviews, enabling HR to assign targeted development plans and improve employee retention.}
 \resumeItem{Enabled personalized employee growth strategies by analyzing performance reviews using Text Sentiment Analysis model built with VADER and TextBlob, \textbf{driving CHRO's talent development strategies.}}
@@ -259,7 +261,7 @@ Data Ethics }
 \vspace{3pt}
 \begin{itemize}[leftmargin=0.00in, label={}, itemsep=0pt, parsep=0pt]
     \item{
-        {\fontseries{b}\fontsize{10.2pt}{13pt}\selectfont{Programming Languages:}}
+        \small{\textbf{Programming Languages:}}
         \small{Python, R, SQL, JavaScript} 
         % \hfill
         % {\fontseries{b}\fontsize{10.2pt}{13pt}\selectfont{Data Visualization:}}
@@ -278,21 +280,21 @@ Data Ethics }
     %     }
 
     \item{
-        {\fontseries{b}\fontsize{10pt}{13pt}\selectfont{AI and ML:}}
+        \small{\textbf{AI and ML:}}
         \small{Traditional ML (Scikit-Learn), Deep Learning (PyTorch, TensorFlow), LLMs (LangChain, HuggingFace)}
         }
 
     \item{
-        {\fontseries{b}\fontsize{10pt}{13pt}\selectfont{Cloud Data Tools:}}
+        \small{\textbf{Cloud Data Tools:}}
         \small{Microsoft Azure (DataBricks, Data Factory, ML Studio), AWS (SageMaker, Dask, EC2), Git, Docker}
         }
 
     \item{
-        {\fontseries{b}\fontsize{10pt}{13pt}\selectfont{Data Visualization:}}
+        \small{\textbf{Data Visualization:}}
         \small{Power BI, Plotly Dash, d3.js, QlikSense}
         }
     \item{
-    {\fontseries{b}\fontsize{10pt}{13pt}\selectfont{Interests and Hobbies:}}
+    \small{\textbf{Interests and Hobbies:}}
     \small{Singing and enjoying music - \href{https://vishuragams.pages.dev}{\underline{Carnatic Ragas}}, playing \href{https://vishugp.github.io/Thuruppu/}{\underline{card games}} and badminton, robotics}
     }
 \end{itemize}
