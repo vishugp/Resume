@@ -10,7 +10,6 @@
 \usepackage{tabularx}
 % \usepackage{charter}
 \usepackage{mathpazo}
-% \usepackage{newtxtext,newtxmath}
 \usepackage{ragged2e}
 \input{glyphtounicode}
 
@@ -21,11 +20,6 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % % Margins
-% \addtolength{\oddsidemargin}{-0.65in}
-% \addtolength{\evensidemargin}{5in}
-% \addtolength{\textwidth}{1.35in}
-% \addtolength{\topmargin}{-0.75in}
-% \addtolength{\textheight}{1.5in}
 \usepackage[margin=0.4in]{geometry}
 
 
@@ -74,8 +68,8 @@
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \renewcommand\labelitemii{$\vcenter{\hbox{$\bullet$}}$}
 \newcommand{\resumeItemListStart}{
-  \vspace{-3pt}
-  \begin{itemize}[leftmargin=0.2in, label=\textbullet]
+  \vspace{-5pt}
+  \begin{itemize}[leftmargin=0.21in, label=\textbullet]
 }
 \newcommand{\resumeItemListEnd}{\end{itemize}}
 
@@ -84,7 +78,7 @@
 % Header/Contact Information
 \def\name{Vishwanath (Vish) Guruvayur}
 \def\phone{+1 (571) 602-2034}
-\def\city{Charlottesville, VA}
+\def\city{Gainesville, VA}
 \def\email{vishguru2704@gmail.com}
 \def\LinkedIn{vishgp}
 \def\github{vishugp}
@@ -92,35 +86,36 @@
 
 
 \begin{center}
-
     % \href{https://vishugp.github.io/Resume}
     {\huge \textbf{\fontsize{24pt}{13pt}\selectfont{\name}}}\\
-    \vspace{0.15cm}
+    \vspace{0.05cm}
     {\huge{\role}}
 \end{center}
 
-\vspace{-47pt}
+\vspace{-48pt}
 
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
     \footnotesize
     \begin{minipage}[t]{0.4\textwidth}
         \city\\
-        \href{tel:\phone}{(571) 602-2034}\\
+        \href{tel:\phone}{+1 (571) 602-2034}\\
         \href{mailto:\email}{\email}
     \end{minipage} 
     &
     \begin{minipage}[t]{0.4\textwidth}\raggedleft
     \footnotesize
+    
+        \href{https://vishguru.com}{{vishguru.com}}\\
         \href{https://github.com/\github}{{github.com/\github}}\\
         \href{https://www.linkedin.com/in/\LinkedIn}{{linkedin.com/in/\LinkedIn}}\\
-        \href{https://vishugp.github.io}{{Website: vishugp.github.io}}
+        
     \end{minipage}
 \end{tabular*}
 
 %-----------EDUCATION----------
 \vspace{-9pt}
 \section{\Large{Education}}
-\vspace{5pt}
+\vspace{3pt}
 \resumeSubHeadingListStart
 
 \resumeSubheading
@@ -136,21 +131,23 @@ Academic Village Resident (The Range)\\
 
 
 
-\textbf{\textsl{Coursework:}}
-Large Language Models (LLMs) {\textbullet}
-Statistical and Bayesian Machine Learning (ML) {\textbullet} 
-Big Data Systems (Cloud Architecture) {\textbullet}
-Deep Learning (DL) {\textbullet}
-Natural Language Processing (NLP) {\textbullet}
-Data Structures and Algorithms (DSA) {\textbullet}
-Data Engineering {\textbullet}
-% Bayesian Machine Learning {\textbullet}
-Data Ethics }
+% \textbf{\textsl{Coursework:}}
+% Large Language Models (LLMs) {\textbullet}
+% Statistical and Bayesian Machine Learning (ML) {\textbullet} 
+% Big Data Systems (Cloud Architecture) {\textbullet}
+% Deep Learning (DL) {\textbullet}
+% Natural Language Processing (NLP) {\textbullet}
+% Data Structures and Algorithms (DSA) {\textbullet}
+% Data Engineering {\textbullet}
+% % Bayesian Machine Learning {\textbullet}
+% Data Ethics 
+
+}
 
 
 
 \resumeSubHeadingListEnd
-\vspace{-4pt}
+\vspace{-6pt}
 \resumeSubHeadingListStart
 \resumeSubheading
     {Birla Institute of Technology and Science \normalsize{(BITS Pilani)}}{Hyderabad, India}
@@ -171,24 +168,30 @@ Data Ethics }
 \resumeSubheading
     {Machine Learning Researcher}
     {Tysons, VA (Remote)}
-    {LMI Inc.}
-    {Nov 2024 -- May 2025}
+    {LMI Inc. and UVA School of Data Science}
+    {Nov 2024 -- Apr 2025}
 \vspace{1pt}
-\resumeItem{\textsl{Capstone Project:} Developed an \textbf{Agentic AI-driven Multimodal RAG-based LLM system} to research the impact of multimodal capabilities on improving educational content retrieval, summarization and comprehension.}
-\resumeItemListStart
+\resumeItem{Capstone Research on multimodal RAG in LLMs to enhance educational content retrieval and summarization quality.}
+
+% \resumeItem{\textsl{Capstone Project:} Developed an \textbf{Agentic AI-driven Multimodal RAG-based LLM system} to research the impact of multimodal capabilities on improving educational content retrieval, summarization and comprehension.}
+
 
 % \resumeItem{Built a multimodal embedding pipeline using SentenceTransformers and CLIP embeddings indexing over 5,000 vectorized content chunks, \textbf{from diverse data sources} (text, images, PDFs, lecture slides, and audio), enabling efficient semantic content retrieval via Pinecone.}
+\resumeItemListStart
+% \resumeItem{Built an \textbf{end-to-end multimodal RAG pipeline} with Sentence Transformers and CLIP embeddings, indexing \textbf{over 6,000 data vectors} from diverse media (text, images and audio) for efficient semantic search via Pinecone.}
 
-\resumeItem{Built a multimodal embedding pipeline with Sentence Transformers and CLIP, indexing \textbf{over 5,000 data chunk vectors from diverse media} (text, images, PDFs, lecture slides, and audio transcripts) for efficient semantic search via Pinecone.}
+\resumeItem{Developed an \textbf{end-to-end multimodal RAG pipeline} using Sentence Transformers and CLIP embeddings, indexing over \textbf{6,000 vectors} from educational text, images, and lecture audio for efficient semantic retrieval via Pinecone DB.}
 
-\resumeItem{Benchmarked 3 Major RAG Frameworks - \textbf{(Zero-Shot, Text, and Image-aided RAG)} identifying improvements in retrieval accuracy and summarization quality across LLaMA and GPT-4 models.}
+
+\resumeItem{Evaluated \textbf{three RAG frameworks} (Zero-Shot, Text-only and Image-augmented RAG) on educational content, improving retrieval accuracy and summarization quality across LLaMA and GPT-4 in diverse contextual settings.}
+% \resumeItem{Benchmarked \textbf{3 RAG Frameworks} (Zero-Shot, Text, and Image-aided Text) for educational content identifying improvements in retrieval accuracy and summarization quality across LLaMA and GPT-4 models in different contextual settings.}
 
 % \resumeItem{Implemented the RAGAS framework and key NLP metrics  to assess system efficacy with \textbf{over 100 pre-classified question sets} with varied levels of specificity, with attention visualizations to validate multimodal understanding.}
-\resumeItem{\textbf{Won the “Most Compelling Visualizations” Award} at the Capstone Showcase for clarity and impact of semantic clustering based explainability in RAG powered LLMs.}
+\resumeItem{\textbf{Awarded “Most Compelling Data Visualizations”} at the Capstone Showcase for impactful semantic clustering in topics and intuitive explainability in multimodal RAG systems.}
 
 \resumeItemListEnd
 
-\vspace{3pt}
+\vspace{-3pt}
 \resumeSubheading
     {Lead Data Scientist}
     {Bethlehem, PA (Remote, Mumbai Office)}
@@ -197,20 +200,26 @@ Data Ethics }
 \vspace{1pt}
 \resumeItem{\textbf{Established and led the Data Science and Analytics Team} for the Critical Care Division, mentoring a high-performing team of 3 data scientists and integrating advanced analytics with best practices into core business functions.}
 \resumeItemListStart
-\resumeItem{\textbf{Prevented \$1.2M in quarterly inventory losses} by designing a time-series based supply chain forecasting system using S-ARIMA and Monte Carlo simulations to improve depleting stock visibility and optimize replenishment cycles.}
-
-% \resumeItem{Engineered \textsl{\textbf{over 30 Data and ML pipelines}} with Python and SQL for critical analytical reports, reducing manual workload by 85\% and enabling real-time insights \textbf{{for faster, more accurate actionable insights.}}}
-% \resumeItem{Engineered \textbf{over 30 data analytics pipelines} using Python and Azure Databricks, reducing reporting turnaround across business functions from monthly to daily and \textbf{improving manual reporting efficiency by 85\%.}}
-\resumeItem{Received the \textbf{“Piramal Excellence Award”} for developing \textbf{over 30 analytics pipelines} in SQL and Python, reducing reporting turnaround from monthly to daily and \textbf{boosting reporting efficiency by 85\%} across business functions.}
+\resumeItem{\textbf{Prevented \$1.2M in quarterly inventory losses} by designing a time-series based supply chain forecasting system leveraging S-ARIMA and Monte Carlo simulations to improve depleting stock visibility and optimizing replenishment cycles.}
 
 
 % \resumeItem{Created end-to-end executive dashboards employing competitive benchmarking and segmentation analysis, identifying growth opportunities, \textbf{influencing long-term strategic planning at the C-suite level.}}
 % \resumeItem{Developed end-to-end executive dashboards using market data, competitive benchmarking and segmentation analysis, identifying growth opportunities and \textbf{informing strategic planning at the CFO and CEO levels.}}
-\resumeItem{Developed detailed end-to-end executive dashboards integrating market data, competitive benchmarking and segmentation analysis \textbf{adopted by the CFO to steer data-driven strategic decisions and growth initiatives.}}
+% \resumeItem{Developed executive analytics dashboards integrating market data with competitive intelligence and segmentation insights, \textbf{empowering the CFO to launch market expansion initiatives and refine strategy across key regions and product lines.}}
+% \resumeItem{\textbf{Empowered the CFO to drive targeted market expansion strategies} through advanced sales analytics dashboards combining market data with segmentation analysis and competitive intelligence.}
+\resumeItem{\textbf{Worked closely with the CFO to drive targeted market expansion strategies} through advanced sales analytics dashboards integrating market data, segmentation analysis, and competitive intelligence.}
+
+
+% \resumeItem{Engineered \textsl{\textbf{over 30 Data and ML pipelines}} with Python and SQL for critical analytical reports, reducing manual workload by 85\% and enabling real-time insights \textbf{{for faster, more accurate actionable insights.}}}
+% \resumeItem{Engineered \textbf{over 30 data analytics pipelines} using Python and Azure Databricks, reducing reporting turnaround across business functions from monthly to daily and \textbf{improving manual reporting efficiency by 85\%.}}
+\resumeItem{Received the \textbf{“Piramal Excellence Award”} for building \textbf{over 30 data analytics pipelines} using Python and SQL, reducing   reporting turnaround from monthly to daily and \textbf{boosting reporting efficiency by 85\%}.}
+
+
+
 
 % \resumeItem{Built an NLP model with VADER and TextBlob to analyze employee performance reviews, enabling HR to assign targeted development plans and improve employee retention.}
-\resumeItem{Enabled personalized employee growth strategies by analyzing performance reviews using Text Sentiment Analysis model built with VADER and TextBlob, \textbf{driving CHRO's talent development strategies.}}
-
+% \resumeItem{Enabled personalized employee growth strategies by analyzing performance reviews using Text Sentiment Analytics model built with VADER and Topic Modelling, \textbf{driving CHRO's talent development strategies.}}
+\resumeItem{\textbf{Enabled CHRO-led talent development initiatives} by analyzing performance reviews via VADER sentiment analysis and topic modeling to personalize growth strategies.}
 
 % \resumeItem{\textbf{Collaborated closely with senior leadership} to translate business challenges into data-driven strategies, improving strategic decision-making and boosting operational efficiency.}
 % \resumeItem{Built an \textbf{NLP sentiment analysis model} using VADER and TextBlob to analyze employee performance reviews, identifying key improvement areas and shaping HR leadership’s talent development and retention strategies.}
@@ -231,7 +240,7 @@ Data Ethics }
 % \resumeProject{Individual Development Plans}{Designed an NLP sentiment analysis model using VADER and TextBlob to analyze performance reviews, identifying key improvement areas and \textbf{informing HR leadership’s talent development strategies.}}
 % \end{itemize}
 
-\vspace{3pt}
+\vspace{-1pt}
 \resumeSubheading
     {Data Science Intern}
     {Mumbai, India}
@@ -240,9 +249,8 @@ Data Ethics }
 \vspace{1pt}
 \resumeItem{Interned in the Consumer Products Division, contributing to high-impact business-facing data science initiatives.}
 \resumeItemListStart
-
-\resumeItem{Achieved \textbf{15\% quarterly increase in market penetration across 400,000 retailers} by building the company's first product recommendation engine implementing the FP-Growth algorithm from scratch.}
-\resumeItem{\textbf{Boosted high-performing sales reps retention rates to 93\%} by developing an attrition prediction model using XGBoost and Logistic Regression on historic sales performance and attrition data.}
+\resumeItem{Achieved \textbf{15\% quarterly increase} in market penetration \textbf{across 400,000 retailers} by building the company's first product recommendation engine implementing the FP-Growth algorithm from scratch.}
+\resumeItem{Boosted high-performing sales reps \textbf{retention rates to 93\%} by developing an attrition prediction model using XGBoost and Logistic Regression on historic sales performance and attrition data.}
 \resumeItem{Recognized for impact by the CEO and \textbf{offered a leadership role to build and head a new analytics team}.}
 \resumeItemListEnd
 % \vspace{-3pt}
@@ -287,7 +295,7 @@ Data Ethics }
 
     \item{
         \small{\textbf{Cloud Data Tools:}}
-        \small{Microsoft Azure (DataBricks, Data Factory, ML Studio), AWS (SageMaker, Dask, EC2), Git, Docker}
+        \small{AWS (SageMaker, EC2, S3), Microsoft Azure (DataBricks, Data Factory, ML Studio), Git, Docker}
         }
 
     \item{
@@ -300,14 +308,16 @@ Data Ethics }
     }
 \end{itemize}
 
-%-----------CERTIFICATIONS-----------
-% \vspace{-21pt}
-% \section{\large{Certifications}}
-% \vspace{2pt}
-% \resumeItemListStart
-% \resumeItem{AWS Certified Solutions Architect – Associate\hfill{Amazon Web Services (expected Mar 2025)}}
-% \resumeItem{\vspace{-7pt}AWS Certified Machine Learning – Associate \hfill{Amazon Web Services (expected Apr 2025)}}
 
-% \resumeItemListEnd
+%-----------CERTIFICATIONS-----------
+\vspace{-18pt}
+\section{\Large{Certifications}}
+\vspace{9pt}
+\resumeItemListStart
+\resumeItem{AWS Certified Solutions Architect – Associate, \textsl{Amazon Web Services}\hfill{May 2025}}
+
+\resumeItem{\vspace{-6pt}AWS Certified Machine Learning – Specialty, \textsl{Amazon Web Services} \hfill{Scheduled - Jun 2025}}
+
+\resumeItemListEnd
 
 \end{document}
