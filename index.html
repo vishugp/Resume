@@ -22,24 +22,35 @@
 
   <script>
     fetch('latest_resume.txt')
-      .then(response => {
-        if (!response.ok) throw new Error("Resume path file not found.");
-        return response.text();
-      })
-      .then(path => {
-        const trimmedPath = path.trim();
-        console.log(trimmedPath);
-        const fullPDFUrl = `${window.location.origin}/${trimmedPath}`;
-        const viewerSrc = `pdfjs/web/viewer.html?file=${encodeURIComponent(fullPDFUrl)}`;
-        document.getElementById("pdfViewer").src = viewerSrc;
-      })
-      .catch(err => {
-        console.error("Failed to load resume path:", err);
-        document.body.innerHTML = `
-          <h2>Could not load resume.</h2>
-          <p>Please contact Vishwanath at 
-          <a href='mailto:vishguru2704@gmail.com'>vishguru2704@gmail.com</a>.</p>`;
-      });
+        .then(response => {
+            if (!response.ok) throw new Error("Resume path file not found.");
+            return response.text();
+        })
+        .then(path => {
+            let trimmedPath = path.trim();
+            
+            // If it's a GitHub "blob" link, convert to raw link
+            if (trimmedPath.includes('github.com') && trimmedPath.includes('/blob/')) {
+            trimmedPath = trimmedPath
+                .replace('https://github.com/', 'https://raw.githubusercontent.com/')
+                .replace('/blob/', '/');
+            } else if (!trimmedPath.startsWith('http')) {
+            // For relative/local paths, prepend the site's base URL
+            trimmedPath = `${window.location.origin}/${trimmedPath}`;
+            }
+            console.log(trimmedPath);
+
+            const viewerSrc = `pdfjs/web/viewer.html?file=${encodeURIComponent(trimmedPath)}`;
+            document.getElementById("pdfViewer").src = viewerSrc;
+        })
+        .catch(err => {
+            console.error("Failed to load resume path:", err);
+            document.body.innerHTML = `
+            <h2>Could not load resume.</h2>
+            <p>Please contact Vishwanath at 
+            <a href='mailto:vishguru2704@gmail.com'>vishguru2704@gmail.com</a>.</p>`;
+        });
+
   </script>
 </body>
 </html>
