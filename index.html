@@ -28,16 +28,9 @@
         })
         .then(path => {
             let trimmedPath = path.trim();
-            
-            // If it's a GitHub "blob" link, convert to raw link
-            if (trimmedPath.includes('github.com') && trimmedPath.includes('/blob/')) {
-            trimmedPath = trimmedPath
-                .replace('https://github.com/', 'https://raw.githubusercontent.com/')
-                .replace('/blob/', '/');
-            } else if (!trimmedPath.startsWith('http')) {
-            // For relative/local paths, prepend the site's base URL
-            trimmedPath = `${window.location.origin}/${trimmedPath}`;
-            }
+
+            // trimmedPath = `https://raw.githubusercontent.com/vishugp/Resume/main/${trimmedPath}`;
+            trimmedPath = `../../${trimmedPath}`
             console.log(trimmedPath);
 
             const viewerSrc = `pdfjs/web/viewer.html?file=${encodeURIComponent(trimmedPath)}`;
