@@ -1,51 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            overflow: hidden;
-        }
-        object {
-            width: 100%;
-            height: 100vh;
-            border: none;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
 </head>
 <body>
-    <object id="resumeObject" type="application/pdf">
-        <p>Could not load resume. Please contact Vishwanath at <a href="mailto:vishguru2704@gmail.com">vishguru2704@gmail.com</a>.</p>
-    </object>
+  <iframe id="pdfViewer" src=""></iframe>
 
-    <script>
-        fetch('latest_resume.txt')
-            .then(response => {
-                if (!response.ok) throw new Error("Resume path file not found.");
-                return response.text();
-            })
-            .then(path => {
-                const trimmedPath = path.trim();
-                const objectEl = document.getElementById('resumeObject');
-                objectEl.data = trimmedPath;
-
-                // Additional fallback: check if resume fails to load after timeout
-                setTimeout(() => {
-                    // Attempt to detect failed load based on empty document or fallback element still visible
-                    if (!objectEl.contentDocument || objectEl.contentDocument.body.children.length === 0) {
-                        document.body.innerHTML = "<h2>Could not load resume. Please contact Vishwanath at <a href='mailto:vishguru2704@gmail.com'>vishguru2704@gmail.com</a>.</h2>";
-                    }
-                }, 2000); // Wait 2s for object load
-            })
-            .catch(err => {
-                console.error("Failed to load resume path:", err);
-                document.body.innerHTML = "<h2>Could not load resume. Please contact Vishwanath at <a href='mailto:vishguru2704@gmail.com'>vishguru2704@gmail.com</a>.</h2>";
-            });
-    </script>
+  <script>
+    fetch('latest_resume.txt')
+      .then(response => {
+        if (!response.ok) throw new Error("Resume path file not found.");
+        return response.text();
+      })
+      .then(path => {
+        const trimmedPath = path.trim();
+        console.log(trimmedPath);
+        const fullPDFUrl = `${window.location.origin}/${trimmedPath}`;
+        const viewerSrc = `pdfjs/web/viewer.html?file=${encodeURIComponent(fullPDFUrl)}`;
+        document.getElementById("pdfViewer").src = viewerSrc;
+      })
+      .catch(err => {
+        console.error("Failed to load resume path:", err);
+        document.body.innerHTML = `
+          <h2>Could not load resume.</h2>
+          <p>Please contact Vishwanath at 
+          <a href='mailto:vishguru2704@gmail.com'>vishguru2704@gmail.com</a>.</p>`;
+      });
+  </script>
 </body>
 </html>
