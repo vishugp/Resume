@@ -31,9 +31,9 @@
 
             // trimmedPath = `https://raw.githubusercontent.com/vishugp/Resume/main/${trimmedPath}`;
             trimmedPath = `../../${trimmedPath}`
-            console.log(trimmedPath);
+            console.log("No SideBar");
 
-            const viewerSrc = `pdfjs/web/viewer.html?file=${encodeURIComponent(trimmedPath)}`;
+            const viewerSrc = `pdfjs/web/viewer.html?file=${encodeURIComponent(trimmedPath)}&sidebar=0`;
             document.getElementById("pdfViewer").src = viewerSrc;
         })
         .catch(err => {
