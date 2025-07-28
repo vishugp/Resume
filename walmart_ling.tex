@@ -20,7 +20,7 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % % Margins
-\usepackage[margin=0.37in]{geometry}
+\usepackage[margin=0.4in]{geometry}
 
 
 % Basic settings
@@ -32,8 +32,9 @@
 
 % Section formatting
 \titleformat{\section}{
+  \vspace{3pt}
   \scshape\raggedright
-}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
 
 % PDF settings
 \pdfgentounicode=1
@@ -42,9 +43,9 @@
 
 
 \newcommand{\resumeItem}[1]{
-% \justifying
+\justifying
   \item{\small{#1}}
-  \vspace{-1.5px}
+  \vspace{-2px}
 }
 
 % % \textbf{-}
@@ -57,9 +58,9 @@
   \item
     \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{\large{#1}} & {\small{#2}} \\
-      {{{#3}}} & {{\small{#4}}}
+      {\textsl{{#3}}} & {\textsl{\small{#4}}}
     \end{tabular*}
-  \vspace{-0.55cm}
+  \vspace{-0.5cm}
 }
 
 % List environment commands
@@ -67,7 +68,8 @@
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \renewcommand\labelitemii{$\vcenter{\hbox{$\bullet$}}$}
 \newcommand{\resumeItemListStart}{
-  \begin{itemize}[leftmargin=0.18in, label=\textbullet]
+  \vspace{-5pt}
+  \begin{itemize}[leftmargin=0.21in, label=\textbullet]
 }
 \newcommand{\resumeItemListEnd}{\end{itemize}}
 
@@ -80,94 +82,54 @@
 \def\email{vishguru2704@gmail.com}
 \def\LinkedIn{vishgp}
 \def\github{vishugp}
-\def\role{Senior Data Scientist}
+\def\role{Data Scientist}
 
-\vspace*{-27pt}
+
 \begin{center}
-    {\fontsize{21pt}{24pt}\selectfont\textbf{\name}}\\
-    {\LARGE \role}
+    % \href{https://vishugp.github.io/Resume}
+    {\huge \textbf{\fontsize{24pt}{13pt}\selectfont{\name}}}\\
+    \vspace{0.03cm}
+    {\LARGE{\role}}
 \end{center}
 
-\vspace{-42pt}
+\vspace{-52pt}
 
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
     \footnotesize
     \begin{minipage}[t]{0.4\textwidth}
         \city\\
-        \href{tel:+15716022034}{+1 (571) 602-2034}\\
+        \href{tel:\phone}{+1 (571) 602-2034}\\
         \href{mailto:\email}{\email}
-    \end{minipage}
+    \end{minipage} 
     &
     \begin{minipage}[t]{0.4\textwidth}\raggedleft
-        \footnotesize
-        \href{https://vishguru.com}{vishguru.com}\\
-        \href{https://github.com/\github}{github.com/\github}\\
-        \href{https://www.linkedin.com/in/\LinkedIn}{linkedin.com/in/\LinkedIn}
+    \footnotesize
+    
+        \href{https://vishguru.com}{{vishguru.com}}\\
+        \href{https://github.com/\github}{{github.com/\github}}\\
+        \href{https://www.linkedin.com/in/\LinkedIn}{{linkedin.com/in/\LinkedIn}}\\
+        
     \end{minipage}
 \end{tabular*}
-
 
 
 
 % \setlist[itemize]{leftmargin=0.38cm}
 
 
-\vspace{-12pt}
-\section{\large{Summary}}
+\vspace{-9pt}
+\section{\Large{Summary}}
 \vspace{3pt}
 \justifying{\small{
 
-    Senior Data Scientist with over 3 years of experience building successful machine learning models and data products across finance, supply chain, and operations. Skilled at leading full-cycle projects - from requirement gathering and pipeline engineering to model development and translating insights into strategic business actions. Proficient in Python, R, SQL, and cloud platforms including Azure and AWS. Passionate about leveraging advanced analytics and AI to drive strategic decision-making.
+    Data Scientist with over 3 years of experience developing predictive models and advanced analytics for pharmaceutical operations using Python, SQL and R. Expert in analyzing large datasets, optimizing pharmacy supply chains, and delivering actionable insights for business partners. Proven ability to collaborate across teams to drive operational efficiency and improve healthcare outcomes, with a passion for translating business challenges into actionable insights that deliver measurable ROI.
 
 
-    
-    % Informatics and Data Science Leader with 3+ years of experience driving cross-functional digital transformation through scalable AI and data governance systems. Proven success in designing informatics strategies, building high-performing teams, and aligning data systems with organizational missions. Experienced in lifecycle management of ML/AI tools across science, education, and operations. Passionate about enabling knowledge discovery through data innovation.
+    % Data Scientist with over 3 years of experience delivering statistical modeling and predictive analytics for healthcare and pharmaceutical domains using Python, SQL, and R. Expert in analyzing large datasets, optimizing data pipelines, and collaborating with interdisciplinary teams to drive actionable insights that enhance operational efficiency and health outcomes. Proven ability to translate complex data into strategic business value, with a passion for improving healthcare systems.
 
+    % Machine Learning Engineer with over 3 years of experience designing and deploying innovative ML and AI solutions, specializing in multimodal LLMs and RAG pipelines using Python, SQL, and AWS. Proven ability to collaborate with cross-functional teams to prototype user-focused AI technologies, driving impactful product experiences. Adept at translating cutting-edge research into practical implementations that enhance technological capabilities.
 
-    % Machine Learning Engineer with 3+ years of experience building AI-driven solutions and scalable data products across finance, supply chain, and operations. Skilled in Python, SQL, and R, with a strong foundation in regression, recommendation, and multivariate modeling. Proven ability to translate real-world business problems into production-ready ML pipelines and APIs, and to communicate insights effectively with stakeholders. 
-
-    % Senior Data Scientist with over 3 years of experience building statistical and machine learning models across finance, supply chain, and operations. Proven track record of leading and delivering high-impact data products, managing end-to-end lifecycles from requirement gathering to translating model outputs into actionable business value. Skilled in Python, R, SQL, and cloud platforms including Azure and AWS.
-
-
-
-
-
-    % Senior Data Scientist with over 3 years of experience in statistical modeling, and machine learning across finance, healthcare, and operations. Skilled in Python, regression techniques, and model lifecycle management. Proven ability to turn complex data into actionable insights and production-ready solutions that drive business impact.
-
-    
-    % Results-driven Data Software Engineer with over 3 years of experience leveraging advanced analytics and predictive modeling to optimize portfolio performance and customer journeys in high-stakes environments. Proficient in Python, SQL, and AWS, with a strong foundation in credit and operational risk management, segmentation, and targeting strategies. Adept at synthesizing large datasets to deliver actionable insights, drive profitable growth, and ensure regulatory compliance. Proven ability to collaborate with cross-functional teams, including finance and risk partners, to design data-driven strategies that enhance P&L outcomes and improve risk-adjusted returns.
-
-    % Results-driven Data Software Engineer with 3+ years of experience at the intersection of data engineering, software development, and front-end application design. Skilled in building robust data architectures using Python, SQL/NoSQL databases, Apache Spark, and cloud platforms including AWS and Azure. Passionate about translating complex data requirements into impactful healthcare applications while maintaining data integrity, security, and regulatory compliance.
-
-    % Creative Data Scientist with 3+ years of experience analyzing large-scale data using Python and SQL to drive product and business impact. Adept at translating data insights into actionable strategies through intuitive storytelling and compelling dashboards. Passionate about music, artist discovery, and data’s role in amplifying creative ecosystems. Experienced in statistical modeling, forecasting, and building metrics that surface emerging trends and inform high-level decision-making. 
-    
-    % Data Science and Analytics Engineering professional with 3+ years of experience delivering high-impact data solutions in the healthcare sector. Skilled in building scalable, analytics-ready datasets using SQL, Python and dbt on AWS and Azure, with a strong foundation in data modeling, visualization, and software engineering best practices. Passionate about collaborating across cross-functional teams to drive data-driven decisions and enabling evidence-based, patient-centered innovation.
-    % Product-minded Data Scientist with 3+ years of experience developing and deploying machine learning solutions across  healthcare, finance, supply chain and operations. Proven ability to translate ambiguous business goals into scalable data products that drive business impact. Strong proficiency in Python, SQL, AWS, and visualization tools, with expertise in statistical modeling, NLP and GenAI. Passionate about solving problems at the intersection of data, product strategy, and stakeholder value.
-    
-    % Results-driven Senior Data Scientist with 3+ years of experience applying machine learning and advanced analytics to support strategic decision-making in finance, healthcare, and operations. Proven track record in developing forecasting models, recommendation systems and semantic search solutions that drive measurable business impact. Skilled in Python, SQL, and AWS, with a strong focus on building reliable, interpretable solutions for cross-functional stakeholders.
-
-    % Senior Data Scientist with over 3 years of experience designing and deploying scalable generative AI and machine learning solutions, specializing in Retrieval-Augmented Generation (RAG), Large Language Models (LLMs), and semantic search pipelines. Proficient in Python, LangChain, and AWS, with a proven track record of collaborating with cross-functional teams to deliver innovative data solutions. Passionate about advancing intelligent agent technologies to transform user experiences.
-
-    % Senior Data Scientist with over 3 years of experience delivering scalable machine learning and NLP solutions, specializing in recommendation systems, predictive analytics and data hygiene for AI readiness. Proficient in Python, SQL, and AWS, with a proven track record of mentoring teams and collaborating with cross-functional stakeholders to drive business impact. Passionate about transforming traditional staffing processes through innovative data-driven strategies.
-
-    % Senior Data Scientist with 3+ years of experience deploying scalable ML/NLP systems across supply chain, search, and recommendation domains. Proficient in productionizing applied machine learning models and building semantic search pipelines using large language models and multimodal vector databases. Experienced in query understanding, information retrieval, and multimodal RAG architectures using Python, SQL and AWS at enterprise scale.
-
-    
-    % Data Scientist with 3+ years of experience applying ML and statistical methods to risk, finance, and operational analytics. Skilled in Python, SQL, AWS, and building scalable pipelines for forecasting, NLP, and asset modeling. Currently completing M.S. in Data Science at UVA with a focus on LLMs, Bayesian ML, and financial risk modeling.
-    
-    % Senior Data Scientist with 3+ years of experience building and deploying recommendation systems and predictive models at scale using Python, SQL, and AWS. Led development of FP-Growth and time-series forecasting engines impacting 400K+ retailers and \$1.2M in quarterly savings. Proficient in PyTorch, Spark, and cloud-based ML ops. Passionate about designing data products that drive personalization, customer insights, and strategic decisions.
-
-    % Machine Learning Engineer with 3+ years of experience developing scalable ML pipelines and personalization systems. Skilled in building end-to-end solutions using Python, PyTorch, and distributed tools like Spark and AWS. Passionate about designing user-centric algorithms to power real-time recommendations, semantic search, and content discovery at global scale.
-
-    % Data Scientist with over three years of experience designing and deploying scalable analytics solutions to drive strategic decision-making. Proficient in Python, SQL, R, and AWS, with expertise in developing advanced reporting, dashboards, and predictive models to support business objectives. Proven ability to lead cross-functional projects, mentor teams and communicate complex insights to diverse stakeholders, delivering measurable ROI in fast-paced environments.
-
-    % Analytical and product-oriented Data Scientist with 3+ years experience driving insights for product, marketing, and executive stakeholders. Adept at experimentation, large-scale data analysis, and platform analytics. Passionate to contribute to Spotify Advertising's mission by applying expertise in SQL, Python, and scalable insight delivery.
-
-
-    % Senior Data Scientist with over 3 years of experience developing predictive models and advanced analytics for pharmaceutical
-    % operations using Python, SQL and R. Expert in analyzing large datasets, optimizing pharmacy supply chains, and delivering
-    % actionable insights for business partners. Proven ability to collaborate across teams to drive operational efficiency and improve
-    % healthcare outcomes, with a passion for translating business challenges into actionable insights that deliver measurable ROI.
+    % Multilingual Senior Data Scientist (fluent in English and Hindi) with 3+ years of experience delivering production-grade ML solutions at scale. Skilled in Python, SQL, PyTorch, and cloud platforms (AWS, Azure), with deep expertise in sequence-to-sequence modeling, Transformers, and RAG-based LLMs. Passionate about cross-cultural linguistics and multilingual AI. Proven track record in delivering data-driven solutions that enhance user experiences and drive strategic business outcomes.
 
     % Data Scientist with over 3 years of experience building scalable ML and AI solutions that drive strategic decision-making and financial performance optimization at enterprise scale. Expert in solution architecture, predictive modeling, revenue forecasting, and advanced analytics using Python, SQL and AWS. Proven track record leading cross-functional projects, deploying production ML pipelines, and translating business challenges into actionable insights that deliver measurable ROI.
 
@@ -201,85 +163,69 @@
 
 }}
 
-
 %----------- PROFESSIONAL EXPERIENCE -----------
-\vspace{-11pt}
-\section{\large{Experience}}
-
+\vspace{-12pt}
+\section{\Large{Experience}}
 \vspace{3pt}
 \resumeSubHeadingListStart
 
 \resumeSubheading
     {Machine Learning Researcher}
-    {Charlottesville, VA (Remote)}
+    {Tysons, VA (Remote)}
     {LMI Inc. and UVA School of Data Science}
-    {Nov 2024 -- Present}
-% \vspace{1pt}
+    {Nov 2024 -- Apr 2025}
+% \vspace{-1pt}
+\resumeItem{\textbf{Capstone Research} on multimodal RAG in LLMs to enhance educational content retrieval and summarization quality.}
 
 % \resumeItem{\textsl{Capstone Project:} Developed an \textbf{Agentic AI-driven Multimodal RAG-based LLM system} to research the impact of multimodal capabilities on improving educational content retrieval, summarization and comprehension.}
-
+\vspace{-1pt}
 
 % \resumeItem{Built a multimodal embedding pipeline using SentenceTransformers and CLIP embeddings indexing over 5,000 vectorized content chunks, \textbf{from diverse data sources} (text, images, PDFs, lecture slides, and audio), enabling efficient semantic content retrieval via Pinecone.}
 \resumeItemListStart
-
-\resumeItem{Research focused on the application of multimodal and hybrid modes of RAG based LLMs to enhance educational content retrieval and summarization quality in a cohersive cohort environment.}
-
 % \resumeItem{Built an \textbf{end-to-end multimodal RAG pipeline} with Sentence Transformers and CLIP embeddings, indexing \textbf{over 6,000 data vectors} from diverse media (text, images and audio) for efficient semantic search via Pinecone.}
 
-\resumeItem{Developed an end-to-end multimodal RAG pipeline using Sentence Transformers and CLIP embeddings, indexing from educational text, images, and lecture audio for efficient semantic retrieval via Pinecone DB.}
+% \resumeItem{Developed an \textbf{end-to-end multimodal RAG pipeline} using Sentence Transformers and CLIP embeddings, indexing over \textbf{6,000 vectors} from educational text, images, and lecture audio for efficient semantic retrieval via Pinecone DB.}
 
 
-
+% \vspace{-2pt}
 % \resumeItem{Developed an \textbf{end-to-end multimodal RAG pipeline} using LangChain and Python, integrating Sentence Transformers and CLIP embeddings to index \textbf{6,000+ vectors} in Pinecone DB for semantic retrieval of educational content.}
-% \resumeItem{Built a multimodal RAG pipeline using Pinecone DB with SentenceTransformers and CLIP embeddings (over 6,000 vectors) and LangChain for semantic retrieval across PDFs, slides and video captions.}
-% \resumeItem{Designed and deployed multimodal retrieval-augmented generation (RAG) systems using Pinecone DB and SentenceTransformers \& CLIP Embedding models, enabling semantic access to scientific literature and educational artifacts.}
-
+\resumeItem{Built a \textbf{multimodal RAG pipeline} integrating SentenceTransformers and CLIP embeddings with Pinecone DB (over 6,000 vectors) and LangChain for semantic retrieval across PDFs, slides and video captions.}
+\vspace{-1pt}
 % \resumeItem{Designed and implemented \textbf{adversarial testing frameworks} to evaluate LLM robustness, improving retrieval accuracy and safety across LLaMA and GPT-4 models in diverse contextual settings.}
-% \resumeItem{Designed a custom evaluation framework to benchmark GPT-4 and LLaMA models on retrieval robustness, using adversarial prompts and semantic drift tests, leading to a 18\% gain in context relevance and reduced hallucination rates.}
+\resumeItem{ Designed a \textbf{custom evaluation framework} to benchmark GPT-4 and LLaMA models on retrieval robustness, using adversarial prompts and semantic drift tests, leading to a 18\% gain in context relevance and reduced hallucination rates.}
 
 % \resumeItem{Evaluated \textbf{three RAG frameworks} (Zero-Shot, Text-only and Image-augmented RAG) on educational content, improving retrieval accuracy and summarization quality across LLaMA and GPT-4 in diverse contextual settings.}
 % \resumeItem{Benchmarked \textbf{3 RAG Frameworks} (Zero-Shot, Text, and Image-aided Text) for educational content identifying improvements in retrieval accuracy and summarization quality across LLaMA and GPT-4 models in different contextual settings.}
 
 % \resumeItem{Implemented the RAGAS framework and key NLP metrics  to assess system efficacy with \textbf{over 100 pre-classified question sets} with varied levels of specificity, with attention visualizations to validate multimodal understanding.}
-
+\vspace{-1pt}
 \resumeItem{\textbf{Awarded “Most Compelling Data Visualizations”} at the Capstone Showcase for impactful semantic clustering in topics and intuitive explainability in multimodal RAG systems.}
-
-% \resumeItem{Awarded “Most Compelling Data Visualizations” at the Capstone Showcase for semantic clustering of topic-level insights from large-scale, multi-format data repositories, aiding exploratory research workflows.}
 
 \resumeItemListEnd
 
-\vspace{-3pt}
+\vspace{-4pt}
 \resumeSubheading
     {Lead Data Scientist}
-    {Bethlehem, PA (Remote)}
+    {Bethlehem, PA (Remote, Mumbai Office)}
     {Piramal Pharma Ltd.}
     {Jan 2022 -- Jun 2024}
-
+\vspace{1pt}
+\resumeItem{\textbf{Established and led the Data Science and Analytics Team} for the Critical Care Division, mentoring a high-performing team of 3 data scientists and integrating advanced analytics and AI products with best practices into core business functions.}
 \resumeItemListStart
-
-\resumeItem{Established and led the Data Science and Analytics Team for the Critical Care Division, building a high-performing team of 4 data scientists in integrating advanced analytics and AI products with best practices into core business functions.}
-
 \resumeItem{\textbf{Prevented \$1.2M in quarterly inventory losses} by designing a time-series based supply chain forecasting system leveraging S-ARIMA and Monte Carlo simulations to improve depleting stock visibility and optimizing replenishment cycles.}
-
-
-
-\resumeItem{Received the \textbf{Piramal Excellence Award} for leading the development of \textbf{over 30 analytics pipelines} using Python and SQL on Azure and AWS, reducing reporting frequency from monthly to daily, and \textbf{increasing operational efficiency by 85\%}.}
-
-\resumeItem{Designed unified monitoring workflows in Python to track both business KPIs and ML model health (data drift, prediction quality), enabling early retraining and aligning model performance with business goals.}
 
 
 % \resumeItem{Created end-to-end executive dashboards employing competitive benchmarking and segmentation analysis, identifying growth opportunities, \textbf{influencing long-term strategic planning at the C-suite level.}}
 % \resumeItem{Developed end-to-end executive dashboards using market data, competitive benchmarking and segmentation analysis, identifying growth opportunities and \textbf{informing strategic planning at the CFO and CEO levels.}}
 % \resumeItem{Developed executive analytics dashboards integrating market data with competitive intelligence and segmentation insights, \textbf{empowering the CFO to launch market expansion initiatives and refine strategy across key regions and product lines.}}
 % \resumeItem{\textbf{Empowered the CFO to drive targeted market expansion strategies} through advanced sales analytics dashboards combining market data with segmentation analysis and competitive intelligence.}
-\resumeItem{\textbf{Partnered directly with the CFO} and commercial teams to build interactive sales and market dashboards that guide targeted expansion strategy across 5 global regions using segmentation and competitive intelligence on market data.}
-
-% \resumeItem{Built lifecycle management strategies using Python-based model monitoring workflows for all production ML models, tracking business KPIs alongside automated data drift detection to enable proactive retraining triggers.}
+\resumeItem{\textbf{Partnered directly with the CFO} and commercial teams to build interactive sales and market dashboards that guide targeted expansion strategy \textbf{across 5 global regions} using segmentation and competitive intelligence on market data.}
 
 
 % \resumeItem{Engineered \textsl{\textbf{over 30 Data and ML pipelines}} with Python and SQL for critical analytical reports, reducing manual workload by 85\% and enabling real-time insights \textbf{{for faster, more accurate actionable insights.}}}
 % \resumeItem{Engineered \textbf{over 30 data analytics pipelines} using Python and Azure Databricks, reducing reporting turnaround across business functions from monthly to daily and \textbf{improving manual reporting efficiency by 85\%.}}
 % \resumeItem{Received the \textbf{“Piramal Excellence Award”} for building \textbf{over 30 data analytics pipelines} using Python, SQL and AWS features, reducing reporting turnaround from monthly to daily and \textbf{boosting reporting efficiency by 85\%}.}
+\resumeItem{Received the \textbf{Piramal Excellence Award} for leading the development of \textbf{over 30 analytics pipelines} using AWS (S3, Lambda, Redshift), reducing reporting frequency from monthly to daily, and \textbf{increasing operational efficiency by 85\%}.}
 
 
 
@@ -308,19 +254,16 @@
 % \resumeProject{Individual Development Plans}{Designed an NLP sentiment analysis model using VADER and TextBlob to analyze performance reviews, identifying key improvement areas and \textbf{informing HR leadership’s talent development strategies.}}
 % \end{itemize}
 
-\vspace{-3pt}
+\vspace{-1pt}
 \resumeSubheading
     {Data Science Intern}
     {Mumbai, India}
     {Piramal Pharma Ltd.}
     {Jul 2021 -- Dec 2021}
-% \vspace{1pt}
-% \resumeItem{Interned in the Consumer Products Division, contributing to high-impact business-facing data science initiatives.}
-
+\vspace{1pt}
+\resumeItem{Interned in the Consumer Products Division, contributing to high-impact business-facing data science initiatives.}
 \resumeItemListStart
-
-\resumeItem{Achieved \textbf{15\% quarterly increase} in market penetration \textbf{across 400,000 retailers} by building the company's first product recommendation engine implementing the Tree-based FP-Growth algorithm from scratch.}
-
+\resumeItem{Achieved \textbf{15\% quarterly increase} in market penetration \textbf{across 400,000 retailers} by building the company's first product recommendation engine implementing the FP-Growth algorithm from scratch.}
 \resumeItem{Boosted high-performing sales reps \textbf{retention rates to 93\%} by developing an attrition prediction model using XGBoost and Logistic Regression on historic sales performance and attrition data.}
 % \resumeItem{Recognized for impact by the CEO and \textbf{offered a leadership role to build and head a new analytics team}.}
 \resumeItemListEnd
@@ -335,10 +278,57 @@
 
 \resumeSubHeadingListEnd
 
+%----------- SKILLS -----------
+\vspace{-15pt}
+\section{\Large{Skills}}
+\vspace{3pt}
+\begin{itemize}[leftmargin=0.00in, label={}, itemsep=0pt, parsep=0pt]
+    \item{
+        \small{\textbf{Languages:}}
+        \small{Python, R, SQL, JavaScript} 
+        % \hfill
+        \hspace{0.7cm}
+        {\fontseries{b}\fontsize{10.2pt}{13pt}\selectfont{Tools:}}
+        \small{Jupyter, Bash, Docker, Git, Conda}
+        }
+
+        % /, JavaScript, C++, MATLAB, Scala, Julia
+
+    % \item{
+    %     {\fontseries{b}\fontsize{10.2pt}{13pt}\selectfont{Machine Learning:}}
+    %     \small{Supervised (Regression, Classification), Unsupervised (Clustering, Association Rules Mining)}
+    %     }
+
+    %     \item{
+    %     {\fontseries{b}\fontsize{10.2pt}{13pt}\selectfont{Artificial Intelligence:}}
+    %     \small{Deep Learning (PyTorch, TensorFlow), NLP and LLMs (LangChain, HuggingFace)}
+    %     }
+
+    \item{
+        \small{\textbf{AI and ML:}}
+        \small{Traditional ML (Scikit-Learn), LLMs (LangChain, OpenAI), Natural Language Processing (NLTK, spaCy, GenSim) }
+        }
+
+    \item{
+        \small{\textbf{Visualization:}}
+        \small{Power BI, Plotly Dash, Matplotlib, GGPlot, d3.js, QlikSense}
+        }
+        
+    \item{
+        \small{\textbf{Cloud and Big Data:}}
+        \small{AWS (SageMaker, EC2, S3, Lambda, Redshift), Azure (Blob, Datalake, Databricks), Snowflake, Spark}
+        }
+
+    
+    % \item{
+    % \small{\textbf{Interests and Hobbies:}}
+    % \small{Singing and enjoying music - \href{https://vishuragams.pages.dev}{\underline{Carnatic Ragas}}, playing \href{https://vishugp.github.io/Thuruppu/}{\underline{card games}} and badminton, robotics}
+    % }
+\end{itemize}
 
 %-----------EDUCATION----------
 \vspace{-16pt}
-\section{\large{Education}}
+\section{\Large{Education}}
 \vspace{3pt}
 \resumeSubHeadingListStart
 
@@ -346,13 +336,12 @@
     {University of Virginia}{Charlottesville, VA}
     {Master of Science in Data Science, GPA: 4.0/4.0}{Jun 2024 -- May 2025}
 
-\vspace{5px}
+\vspace{4px}
+% {\fontseries{}\fontsize{10.2pt}{11pt}\selectfont{Activities:}}
 \footnotesize{
+Teaching Assistant - Statistical Machine Learning {\textbullet}
 Data Science Ambassador {\textbullet}
-Teaching Assistant - Statistical Learning {\textbullet}
-Academic Village Resident (The Range)
-}
-
+Academic Village Resident (The Range)\\
 
 
 
@@ -367,11 +356,12 @@ Academic Village Resident (The Range)
 % % Bayesian Machine Learning {\textbullet}
 % Data Ethics 
 
-% }
+}
+
+
 
 \resumeSubHeadingListEnd
-\vspace{-12pt}
-
+\vspace{-14pt}
 \resumeSubHeadingListStart
 \resumeSubheading
     {Birla Institute of Technology and Science \normalsize{(BITS Pilani)}}{Hyderabad, India}
@@ -380,129 +370,16 @@ Academic Village Resident (The Range)
 \resumeSubHeadingListEnd
 
 
-% %----------- SKILLS -----------
-% \vspace{-8pt}
-% \section{\large{Skills}}
-% \vspace{3pt}
-% \begin{itemize}[leftmargin=0.00in, label={}, itemsep=0pt, parsep=0pt]
-%     \item{
-%         \small{\textbf{Languages:}}
-%         \small{Python, R, SQL, JavaScript} 
-%         % \hfill
-%         \hspace{1cm}
-%         {\fontseries{b}\fontsize{10.2pt}{13pt}\selectfont{Tools:}}
-%         \small{Jupyter, Flask, Bash, Docker, Git, Conda}
-%         }
+%-----------CERTIFICATIONS-----------
+\vspace{-9pt}
+\section{\Large{Certifications}}
+\vspace{9pt}
+\resumeItemListStart
 
-        
-%     \item{
-%         \small{\textbf{AI and ML:}}
-%         \small{Statistical ML (Scikit-Learn, TidyModels), NLP (NLTK, Spacy), LLMs (LangChain), Deep Learning (PyTorch) }
-%         }
+\resumeItem{AWS Certified Solutions Architect – Associate, \textsl{Amazon Web Services}\hfill\sl{May 2025 - May 2028}}
 
+\resumeItem{\vspace{-6pt}AWS Certified Machine Learning – Specialty, \textsl{Amazon Web Services} \hfill\sl{Jun 2025 - Jun 2028}}
 
-    
-%         % /, JavaScript, C++, MATLAB, Scala, Julia
-
-%     % \item{
-%     %     {\fontseries{b}\fontsize{10.2pt}{13pt}\selectfont{Machine Learning:}}
-%     %     \small{Supervised (Regression, Classification), Unsupervised (Clustering, Association Rules Mining)}
-%     %     }
-
-%     %     \item{
-%     %     {\fontseries{b}\fontsize{10.2pt}{13pt}\selectfont{Artificial Intelligence:}}
-%     %     \small{Deep Learning (PyTorch, TensorFlow), NLP and LLMs (LangChain, HuggingFace)}
-%     %     }
-
-%     \item{
-%         \small{\textbf{Visualization:}}
-%         \small{Power BI, Plotly Dash, Matplotlib, Excel, Tableau, GGPlot, d3.js, QlikSense}
-%         }
-        
-%     \item{
-%         \small{\textbf{Cloud and Big Data:}}
-%         \small{AWS Certified, Hadoop, Azure Databricks, Spark, Snowflake}
-%         }
-
-%     % (SageMaker, EC2, S3, Lambda, Redshift)
-        
-    
-
-%     \item{
-%     \small{\textbf{Certifications:}}
-%     \href{https://www.credly.com/badges/12da6e0d-aa6a-4a6e-a598-93941c4a35c6}{\textsl{AWS Certified Solutions Architect – Associate}},
-%     \href{https://www.credly.com/badges/c8b32ca5-03da-4578-a92f-9e11d0011ee8}{\textsl{AWS Certified Machine Learning – Specialty}} 
-%     }
-    
-
-%     \vspace{1px}
-%     \item{
-%     \small{\textbf{Interests and Hobbies:}}
-%     \small{Singing and Music Analysis {\small{(\href{https://carnatic.vishguru.com}{\textsl{Carnatic Ragas}}, 
-%      \href{https://vishugp.github.io/MusicMandala/}{\textsl{Spotify Map}})}},
-%      playing 
-%     \href{https://vishugp.github.io/Thuruppu/}{\textsl{card games}}, badminton and chess
-    
-%     % , robotics
-    
-%     }
-%     }
-% \end{itemize}
-
-%----------- SKILLS -----------
-\vspace{-10pt}
-\section{\large{Skills}}
-\vspace{3pt}
-\begin{itemize}[leftmargin=0.00in, label={}, itemsep=0pt, parsep=0pt]
-\item{
-\small{\textbf{Languages:} Python, R, SQL, JavaScript, Bash}
-\hspace{1cm}
-\small{\textbf{Tools:} Jupyter, Flask, Docker, Git, Conda, Linux}
-}
-\item{
-\small{\textbf{Visualization:} Power BI, Plotly Dash, Matplotlib, Seaborn, Excel}
-}
-\item{
-% \small{\textbf{AI and ML:} Scikit-learn, TidyModels, PyTorch, XGBoost, LangChain, Hugging Face, Spacy, NLTK}
-\small{\textbf{AI and ML:} Stat Modeling (Scikit-Learn, XGBoost), Deep Learning (PyTorch, TF), LLMs (LangChain), NLP (NLTK, SpaCy)}
-}
-
-
-
-\item{
-\small{\textbf{Cloud and Big Data:} AWS Certified, Azure Databricks, Spark, Snowflake, Hadoop}
-}
-\item{
-\small{\textbf{Certifications:} 
-\href{https://www.credly.com/badges/12da6e0d-aa6a-4a6e-a598-93941c4a35c6}{\textsl{AWS Certified Solutions Architect – Associate}},
-\href{https://www.credly.com/badges/c8b32ca5-03da-4578-a92f-9e11d0011ee8}{\textsl{AWS Certified Machine Learning – Specialty}}}
-}
-\item{
-\small{\textbf{Hobbies:} Singing and Music Analysis (\href{https://carnatic.vishguru.com}{\textsl{Raga Classifier}}, 
-\href{https://vishugp.github.io/MusicMandala/}{\textsl{Spotify Map}}), 
-\href{https://vishugp.github.io/Thuruppu/}{\textsl{Card Games}}, Chess, Badminton}
-}
-
-\end{itemize}
-
-
-
-
-% %-----------CERTIFICATIONS-----------
-
-% \section{\large{Certifications}}
-
-% \vspace{3pt}
-% \resumeItemListStart
-
-% \resumeItem{
-% \href{https://www.credly.com/badges/12da6e0d-aa6a-4a6e-a598-93941c4a35c6}
-% {\textsl{AWS Certified Solutions Architect – Associate, Amazon Web Services}}\hfill\sl{May 2025 - May 2028}}
-% \vspace{-6pt}
-% \resumeItem{
-
-% \href{https://www.credly.com/badges/c8b32ca5-03da-4578-a92f-9e11d0011ee8}{\textsl{AWS Certified Machine Learning – Specialty, Amazon Web Services}} \hfill\sl{Jun 2025 - Jun 2028}}
-
-% \resumeItemListEnd
+\resumeItemListEnd
 
 \end{document}

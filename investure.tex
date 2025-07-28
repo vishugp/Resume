@@ -1,0 +1,350 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+% \usepackage{charter}
+\usepackage{mathpazo}
+\usepackage{ragged2e}
+\input{glyphtounicode}
+
+% Page setup
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% % Margins
+\usepackage[margin=0.4in]{geometry}
+
+
+% Basic settings
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0.08003pt}
+\setlength{\footskip}{4.08003pt}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{3pt}
+  \scshape\raggedright
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+% PDF settings
+\pdfgentounicode=1
+
+% Custom commands
+
+
+\newcommand{\resumeItem}[1]{
+\justifying
+  \item{\small{#1}}
+  \vspace{-2px}
+}
+
+% % \textbf{-}
+% \newcommand{\resumeProject}[2]{
+% \justifying
+%   \item{\small{\textbf{\small{#1}}}: {#2}}
+% }
+
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{\large{#1}} & {\small{#2}} \\
+      {\textsl{{#3}}} & {\textsl{\small{#4}}}
+    \end{tabular*}
+  \vspace{-0.5cm}
+}
+
+% List environment commands
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\renewcommand\labelitemii{$\vcenter{\hbox{$\bullet$}}$}
+\newcommand{\resumeItemListStart}{
+  \vspace{-5pt}
+  \begin{itemize}[leftmargin=0.21in, label=\textbullet]
+}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+\begin{document}
+
+% Header/Contact Information
+\def\name{Vishwanath (Vish) Guruvayur}
+\def\phone{+1 (571) 602-2034}
+\def\city{Gainesville, VA}
+\def\email{vishguru2704@gmail.com}
+\def\LinkedIn{vishgp}
+\def\github{vishugp}
+\def\role{Data Science Analyst}
+
+
+\begin{center}
+    % \href{https://vishugp.github.io/Resume}
+    {\huge \textbf{\fontsize{24pt}{13pt}\selectfont{\name}}}\\
+    \vspace{0.03cm}
+    {\LARGE{\role}}
+\end{center}
+
+\vspace{-48pt}
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \footnotesize
+    \begin{minipage}[t]{0.4\textwidth}
+        \city\\
+        \href{tel:\phone}{+1 (571) 602-2034}\\
+        \href{mailto:\email}{\email}
+    \end{minipage} 
+    &
+    \begin{minipage}[t]{0.4\textwidth}\raggedleft
+    \footnotesize
+    
+        \href{https://vishguru.com}{{vishguru.com}}\\
+        \href{https://github.com/\github}{{github.com/\github}}\\
+        \href{https://www.linkedin.com/in/\LinkedIn}{{linkedin.com/in/\LinkedIn}}\\
+        
+    \end{minipage}
+\end{tabular*}
+
+
+
+% \setlist[itemize]{leftmargin=0.38cm}
+
+
+\vspace{-12pt}
+\section{\Large{Summary}}
+\vspace{3pt}
+\justifying{\small{
+
+    Performance Analytics professional with over 3 years of experience in quantitative analysis, financial modeling, and portfolio analytics across multi-asset environments. Expert in developing automated reporting systems, conducting statistical analysis, and delivering actionable insights that drive strategic investment decisions. Proven track record in building scalable data pipelines, performance measurement frameworks, and risk analytics using Python, SQL, and advanced statistical methods. Strong background in cross-functional collaboration, data quality assurance, and translating complex analytical results into clear, executive-level reporting for stakeholders.
+
+}}
+
+%----------- PROFESSIONAL EXPERIENCE -----------
+\vspace{-12pt}
+\section{\Large{Experience}}
+\vspace{3pt}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+    {Quantitative Research Analyst}
+    {Tysons, VA (Remote)}
+    {LMI Inc. and UVA School of Data Science}
+    {Nov 2024 -- Apr 2025}
+% \vspace{-1pt}
+\resumeItem{\textbf{Capstone Research} on advanced analytics and machine learning frameworks for enhanced data retrieval and analytical reporting.}
+
+% \resumeItem{\textsl{Capstone Project:} Developed an \textbf{Agentic AI-driven Multimodal RAG-based LLM system} to research the impact of multimodal capabilities on improving educational content retrieval, summarization and comprehension.}
+\vspace{-1pt}
+
+% \resumeItem{Built a multimodal embedding pipeline using SentenceTransformers and CLIP embeddings indexing over 5,000 vectorized content chunks, \textbf{from diverse data sources} (text, images, PDFs, lecture slides, and audio), enabling efficient semantic content retrieval via Pinecone.}
+\resumeItemListStart
+% \resumeItem{Built an \textbf{end-to-end multimodal RAG pipeline} with Sentence Transformers and CLIP embeddings, indexing \textbf{over 6,000 data vectors} from diverse media (text, images and audio) for efficient semantic search via Pinecone.}
+
+% \resumeItem{Developed an \textbf{end-to-end multimodal RAG pipeline} using Sentence Transformers and CLIP embeddings, indexing over \textbf{6,000 vectors} from educational text, images, and lecture audio for efficient semantic retrieval via Pinecone DB.}
+
+
+% \vspace{-2pt}
+% \resumeItem{Developed an \textbf{end-to-end multimodal RAG pipeline} using LangChain and Python, integrating Sentence Transformers and CLIP embeddings to index \textbf{6,000+ vectors} in Pinecone DB for semantic retrieval of educational content.}
+\resumeItem{Developed comprehensive \textbf{analytical frameworks} and data processing pipelines handling \textbf{6,000+ data points} across diverse sources, implementing advanced statistical methods for pattern recognition and performance measurement.}
+\vspace{-1pt}
+% \resumeItem{Designed and implemented \textbf{adversarial testing frameworks} to evaluate LLM robustness, improving retrieval accuracy and safety across LLaMA and GPT-4 models in diverse contextual settings.}
+\resumeItem{Designed \textbf{custom evaluation frameworks} and benchmarking methodologies for model performance assessment, achieving \textbf{18\% improvement} in analytical accuracy through rigorous statistical validation and quality control processes.}
+
+% \resumeItem{Evaluated \textbf{three RAG frameworks} (Zero-Shot, Text-only and Image-augmented RAG) on educational content, improving retrieval accuracy and summarization quality across LLaMA and GPT-4 in diverse contextual settings.}
+% \resumeItem{Benchmarked \textbf{3 RAG Frameworks} (Zero-Shot, Text, and Image-aided Text) for educational content identifying improvements in retrieval accuracy and summarization quality across LLaMA and GPT-4 models in different contextual settings.}
+
+% \resumeItem{Implemented the RAGAS framework and key NLP metrics  to assess system efficacy with \textbf{over 100 pre-classified question sets} with varied levels of specificity, with attention visualizations to validate multimodal understanding.}
+\vspace{-1pt}
+\resumeItem{\textbf{Awarded "Most Compelling Data Visualizations"} at the Capstone Showcase for creating intuitive, executive-level analytical dashboards with advanced clustering techniques and clear performance reporting.}
+
+\resumeItemListEnd
+
+\vspace{-4pt}
+\resumeSubheading
+    {Lead Performance Analytics \& Data Scientist}
+    {Bethlehem, PA (Remote, Mumbai Office)}
+    {Piramal Pharma Ltd.}
+    {Jan 2022 -- Jun 2024}
+\vspace{1pt}
+\resumeItem{\textbf{Built and led the Analytics Team} for the Critical Care Division, managing 3 analysts and establishing best-in-class performance measurement, portfolio analytics, and automated reporting systems across multiple business units.}
+\resumeItemListStart
+\resumeItem{\textbf{Prevented \$1.2M in quarterly losses} through development of sophisticated \textbf{time-series forecasting models} using S-ARIMA and Monte Carlo simulations for portfolio risk assessment and inventory optimization across multi-asset supply chain operations.}
+
+
+% \resumeItem{Created end-to-end executive dashboards employing competitive benchmarking and segmentation analysis, identifying growth opportunities, \textbf{influencing long-term strategic planning at the C-suite level.}}
+% \resumeItem{Developed end-to-end executive dashboards using market data, competitive benchmarking and segmentation analysis, identifying growth opportunities and \textbf{informing strategic planning at the CFO and CEO levels.}}
+% \resumeItem{Developed executive analytics dashboards integrating market data with competitive intelligence and segmentation insights, \textbf{empowering the CFO to launch market expansion initiatives and refine strategy across key regions and product lines.}}
+% \resumeItem{\textbf{Empowered the CFO to drive targeted market expansion strategies} through advanced sales analytics dashboards combining market data with segmentation analysis and competitive intelligence.}
+\resumeItem{\textbf{Collaborated directly with CFO and senior leadership} to create comprehensive \textbf{performance reporting and analytics dashboards} integrating market data, competitive benchmarking, and portfolio analysis across \textbf{5 global regions}, directly informing strategic investment decisions.}
+
+
+% \resumeItem{Engineered \textsl{\textbf{over 30 Data and ML pipelines}} with Python and SQL for critical analytical reports, reducing manual workload by 85\% and enabling real-time insights \textbf{{for faster, more accurate actionable insights.}}}
+% \resumeItem{Engineered \textbf{over 30 data analytics pipelines} using Python and Azure Databricks, reducing reporting turnaround across business functions from monthly to daily and \textbf{improving manual reporting efficiency by 85\%.}}
+% \resumeItem{Received the \textbf{"Piramal Excellence Award"} for building \textbf{over 30 data analytics pipelines} using Python, SQL and AWS features, reducing reporting turnaround from monthly to daily and \textbf{boosting reporting efficiency by 85\%}.}
+\resumeItem{Received the \textbf{Piramal Excellence Award} for architecting \textbf{30+ automated reporting and analytics pipelines} using Python, SQL, and AWS, transforming manual monthly reporting to real-time daily insights and \textbf{improving operational efficiency by 85\%}.}
+
+\resumeItem{\textbf{Established data quality and reconciliation protocols} ensuring accuracy and reliability of all analytical deliverables, implementing statistical validation methods and quality control processes across diverse datasets and reporting outputs.}
+
+% \resumeItem{Built an NLP model with VADER and TextBlob to analyze employee performance reviews, enabling HR to assign targeted development plans and improve employee retention.}
+% \resumeItem{Enabled personalized employee growth strategies by analyzing performance reviews using Text Sentiment Analytics model built with VADER and Topic Modelling, \textbf{driving CHRO's talent development strategies.}}
+% \resumeItem{\textbf{Enabled CHRO-led talent development initiatives} by analyzing performance reviews via VADER sentiment analysis and topic modeling to personalize growth strategies.}
+
+% \resumeItem{\textbf{Collaborated closely with senior leadership} to translate business challenges into data-driven strategies, improving strategic decision-making and boosting operational efficiency.}
+% \resumeItem{Built an \textbf{NLP sentiment analysis model} using VADER and TextBlob to analyze employee performance reviews, identifying key improvement areas and shaping HR leadership's talent development and retention strategies.}
+
+
+
+% \resumeItem{Introduced \textbf{Predictive Modeling} for streamlining financial planning, market analysis, and supply chain operations, \textsl{\textbf{driving a 40\% efficiency gain}} in processes and enhancing visibility into inefficiencies and optimization opportunities.}
+\resumeItemListEnd
+
+% \vspace{-16pt}
+% {\small \textsl{{Key Project Highlights:}}}
+% \vspace{-5pt}
+% \begin{itemize}
+% \resumeProject{Inventory Forecasting}{Prevented \textbf{\$1.2M in quarterly inventory} losses by increasing depleting stock visibility and optimizing replenishment cycles using an S-ARIMA and Monte Carlo simulation-based time-series forecasting pipeline.}
+
+% \resumeProject{Market Share and Growth Analytics}{Created an executive dashboard employing competitive benchmarking and segmentation analysis, identifying growth opportunities, \textbf{influencing long-term strategic planning at the C-suite level.}}
+
+% \resumeProject{Individual Development Plans}{Designed an NLP sentiment analysis model using VADER and TextBlob to analyze performance reviews, identifying key improvement areas and \textbf{informing HR leadership's talent development strategies.}}
+% \end{itemize}
+
+\vspace{-1pt}
+\resumeSubheading
+    {Quantitative Analytics Intern}
+    {Mumbai, India}
+    {Piramal Pharma Ltd.}
+    {Jul 2021 -- Dec 2021}
+\vspace{1pt}
+\resumeItem{Supported the Consumer Products Division with \textbf{quantitative analysis and performance analytics} initiatives, contributing to portfolio optimization and strategic decision-making processes.}
+\resumeItemListStart
+\resumeItem{Delivered \textbf{15\% quarterly performance improvement} in market penetration metrics \textbf{across 400,000 retail data points} by developing the company's first recommendation analytics engine using advanced statistical algorithms and data mining techniques.}
+\resumeItem{Enhanced retention analytics achieving \textbf{93\% accuracy} in performance prediction models using ensemble methods (XGBoost and Logistic Regression) on historical performance and behavioral datasets with rigorous statistical validation.}
+% \resumeItem{Recognized for impact by the CEO and \textbf{offered a leadership role to build and head a new analytics team}.}
+\resumeItemListEnd
+% \vspace{-3pt}
+% {\small \textsl{{Key Project Highlights:}}}
+% \vspace{-5pt}
+% \begin{itemize}
+% \resumeProject{Product Recommendation Engine}{Developed the company's first recommendation engine pipeline from scratch based on the FP-Growth algorithm, achieving \textsl{\textbf{15\% increase}} in market penetration quarterly across \textbf{\textsl{400k retailers}}.}
+
+% \resumeProject{Salesmen Attrition Prediction}{Built an ensemble model utilizing \textbf{XGBoost and Logistic Regression} to predict salesmen attrition by leveraging performance metrics and operational features, achieving a \textsl{\textbf{93\% critical retention rate}.}}
+% \end{itemize}
+
+\resumeSubHeadingListEnd
+
+%----------- SKILLS -----------
+\vspace{-15pt}
+\section{\Large{Skills}}
+\vspace{3pt}
+\begin{itemize}[leftmargin=0.00in, label={}, itemsep=0pt, parsep=0pt]
+    \item{
+        \small{\textbf{Programming Languages:}}
+        \small{Python, R, SQL, JavaScript} 
+        % \hfill
+        \hspace{0.5cm}
+        {\fontseries{b}\fontsize{10.2pt}{13pt}\selectfont{Tools:}}
+        \small{Excel (Advanced), Jupyter, Git, Docker}
+        }
+
+        % /, JavaScript, C++, MATLAB, Scala, Julia
+
+    % \item{
+    %     {\fontseries{b}\fontsize{10.2pt}{13pt}\selectfont{Machine Learning:}}
+    %     \small{Supervised (Regression, Classification), Unsupervised (Clustering, Association Rules Mining)}
+    %     }
+
+    %     \item{
+    %     {\fontseries{b}\fontsize{10.2pt}{13pt}\selectfont{Artificial Intelligence:}}
+    %     \small{Deep Learning (PyTorch, TensorFlow), NLP and LLMs (LangChain, HuggingFace)}
+    %     }
+
+    \item{
+        \small{\textbf{Statistical Analysis:}}
+        \small{Time-Series Forecasting, Risk Modeling, Portfolio Analytics, Performance Measurement, Statistical Validation}
+        }
+
+    \item{
+        \small{\textbf{Data \& Reporting:}}
+        \small{Power BI, Tableau, Advanced Excel, Plotly Dash, Financial Modeling, Automated Reporting Systems}
+        }
+        
+    \item{
+        \small{\textbf{Databases \& Cloud:}}
+        \small{SQL Server, AWS (S3, Lambda, Redshift), Azure (Databricks), Snowflake, Data Quality \& Reconciliation}
+        }
+
+    
+    % \item{
+    % \small{\textbf{Interests and Hobbies:}}
+    % \small{Singing and enjoying music - \href{https://vishuragams.pages.dev}{\underline{Carnatic Ragas}}, playing \href{https://vishugp.github.io/Thuruppu/}{\underline{card games}} and badminton, robotics}
+    % }
+\end{itemize}
+
+%-----------EDUCATION----------
+\vspace{-16pt}
+\section{\Large{Education}}
+\vspace{3pt}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+    {University of Virginia}{Charlottesville, VA}
+    {Master of Science in Data Science, GPA: 4.0/4.0}{Jun 2024 -- May 2025}
+
+\vspace{4px}
+% {\fontseries{}\fontsize{10.2pt}{11pt}\selectfont{Activities:}}
+\footnotesize{
+Teaching Assistant - Statistical Machine Learning {\textbullet}
+Data Science Ambassador {\textbullet}
+Academic Village Resident (The Range)\\
+
+% \textbf{\textsl{Relevant Coursework:}}
+% Financial Analytics {\textbullet}
+% Statistical Machine Learning {\textbullet} 
+% Quantitative Methods {\textbullet}
+% Big Data Systems {\textbullet}
+% Data Engineering {\textbullet}
+% Applied Statistics
+% Large Language Models (LLMs) {\textbullet}
+% Statistical and Bayesian Machine Learning (ML) {\textbullet} 
+% Big Data Systems (Cloud Architecture) {\textbullet}
+% Deep Learning (DL) {\textbullet}
+% Natural Language Processing (NLP) {\textbullet}
+% Data Structures and Algorithms (DSA) {\textbullet}
+% Data Engineering {\textbullet}
+% % Bayesian Machine Learning {\textbullet}
+% Data Ethics 
+
+}
+
+
+
+\resumeSubHeadingListEnd
+\vspace{-14pt}
+\resumeSubHeadingListStart
+\resumeSubheading
+    {Birla Institute of Technology and Science \normalsize{(BITS Pilani)}}{Hyderabad, India}
+    {Bachelor of Engineering in Mechanical Engineering, Minor in Data Science, GPA: 3.8/4.0}{Aug 2018 -- Dec 2021}
+
+\resumeSubHeadingListEnd
+
+
+%-----------CERTIFICATIONS-----------
+\vspace{-9pt}
+\section{\Large{Certifications}}
+\vspace{9pt}
+\resumeItemListStart
+
+\resumeItem{AWS Certified Solutions Architect – Associate, \textsl{Amazon Web Services}\hfill\sl{May 2025 - May 2028}}
+
+\resumeItem{\vspace{-6pt}AWS Certified Machine Learning – Specialty, \textsl{Amazon Web Services} \hfill\sl{Jun 2025 - Jun 2028}}
+
+\resumeItemListEnd
+
+\end{document}
