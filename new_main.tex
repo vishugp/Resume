@@ -1,0 +1,274 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+
+
+
+% \usepackage{mathpazo}
+% \usepackage{libertine}
+% \usepackage{charter}
+\usepackage[T1]{fontenc}
+\usepackage[sfdefault]{sourcesanspro}
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{ragged2e}
+\input{glyphtounicode}
+
+% Page setup
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% % Margins
+\usepackage[margin=0.45in]{geometry}
+
+
+% Basic settings
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0.08003pt}
+\setlength{\footskip}{4.08003pt}
+
+% Section formatting
+\titleformat{\section}{\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule]
+
+% PDF settings
+\pdfgentounicode=1
+
+% Custom commands
+
+
+\newcommand{\resumeItem}[1]{
+% \justifying
+  \item{\small{#1}}
+  \vspace{-1.5px}
+}
+
+% % \textbf{-}
+% \newcommand{\resumeProject}[2]{
+% \justifying
+%   \item{\small{\textbf{\small{#1}}}: {#2}}
+% }
+
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{\large{#1}} & {\small{#2}} \\
+      {{{#3}}} & {{\small{#4}}}
+    \end{tabular*}
+  \vspace{-0.4cm}
+}
+
+% List environment commands
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\renewcommand\labelitemii{$\vcenter{\hbox{$\bullet$}}$}
+\newcommand{\resumeItemListStart}{
+  \begin{itemize}[leftmargin=0.18in, label=\textbullet]
+}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+
+%------------------------------------------------------------
+
+
+\def\Summary{\small{
+Data Scientist with \textbf{3+ years of experience} building ML systems and data products across healthcare, operations, and e-commerce. Expertise in \textbf{Python, SQL, and AWS}, delivering production-grade, interpretable data products with model monitoring expertise. Strong focus on scalable deployment, experimentation, and \textbf{LLM-based retrieval}, with peer-reviewed research in multimodal RAG. Passionate about \textbf{bridging research and real-world impact} through responsible, scalable data science products.
+}}
+
+
+%------------------------------------------------------------
+
+\begin{document}
+
+
+% Header/Contact Information
+\def\name{Vishwanath (Vish) Guruvayur}
+\def\phone{+1 (571) 602-2034}
+\def\city{Gainesville, VA}
+\def\email{vishguru2704@gmail.com}
+\def\LinkedIn{linkedin.com/in/vishgp}
+\def\github{vishugp}
+\def\role{Data Scientist}
+\def\paperlink{https://intextbooks.science.uu.nl/workshop2025/files/iTextbooks2025_paper_3.pdf}
+\def\salink{https://www.credly.com/badges/12da6e0d-aa6a-4a6e-a598-93941c4a35c6}
+\def\mllink{https://www.credly.com/badges/c8b32ca5-03da-4578-a92f-9e11d0011ee8}
+
+\vspace*{-30pt}
+\begin{center}
+    {\Huge{\name}}
+    \vspace{3pt}
+
+    
+    \small 
+    \href{https://vishguru.com}{{vishguru.com}} $|$
+    \href{tel:+1 (571) 602-2034}{\phone} $|$ 
+    \href{mailto:vishvesh2704@gmail.com}{{\email}} $|$ 
+    \href{https://linkedin.com/in/vishgp}{\LinkedIn}
+    
+\end{center}
+
+
+\vspace{-27pt}
+% \justifying
+\section{Summary}
+\vspace{-5pt}
+\Summary
+\vspace{-12pt}
+
+%-------------------EXPERIENCE---------------------------
+\section{Experience}
+\vspace{-5pt}
+\resumeSubHeadingListStart
+\resumeSubheading
+    {AI Researcher}
+    {Charlottesville, VA (Remote)}
+    {University of Virginia}
+    {Nov 2024 - Present}
+    
+    \resumeItemListStart
+    \resumeItem{Leading \textbf{applied research on multimodal and hybrid RAG} (Retrieval-Augmented Generation) to enhance content retrieval, comprehension and semantic search across educational media in the form of text, image, and audio.}
+
+    \resumeItem{Built and evaluated a scalable RAG \textbf{pipeline with 10,000+ multimodal vectors} using SentenceTransformers, CLIP, and Pinecone, and evaluation using RAGAS and adversarial prompts to improve retrieval accuracy and reduce hallucination.}
+
+    \resumeItem{Co-authored  \href{\paperlink}{\textbf{peer-reviewed paper} {\underline{link}}} at AIED 2025 conference, introducing innovative techniques for multimodal retrieval and evaluation; awarded “Most Compelling Data Visualizations” at UVA's Annual Capstone Showcase.}
+
+
+    \resumeItem{Currently leading R\&D of an \textbf{Agentic AI-based LLM assistant} that leverages structured retrieval over temporally-linked academic content to explore new methods of enhancing student support and informing instructional strategy.}
+
+    
+    \resumeItemListEnd
+
+
+\resumeSubheading
+    {Senior Data Scientist}
+    {Bethlehem, PA (Remote)}
+    {Piramal Pharma Ltd.}
+    {Jan 2022 - Jun 2024}
+
+    \resumeItemListStart
+    \resumeItem{\textbf{Established and led the Data Science team} for the Critical Care division, driving analytics integration into key business functions and mentoring junior data scientists across multiple high-impact projects.}
+
+    \resumeItem{\textbf{Prevented \$1.2M in quarterly inventory losses} by implementing counterfactual analysis of consumed inventory, write-offs and forecasted sales forecasting using Monte Carlo simulations and S-ARIMA modeling.}
+
+    \resumeItem{Worked closely with the CFO to develop market segmentation models and competitive intelligence dashboards using AWS and PowerBI, guiding global pricing, product launch, and acquisition strategies across 5 business regions.}
+
+    \resumeItem{Reduced ACoS \textbf{from 45\% to 8\% within 6 months} for high-priority e-commerce products by leveraging alternative data with NLP (VADER, SpaCy), market segmentation, and A/B testing to boost ad campaign optimizations.}
+
+    \resumeItem{\textbf{Enabled CHRO led initiatives} to assign targeted development plans and improve employee retention by building an NLP-based sentiment analytics pipeline with VADER and TextBlob to analyze employee performance reviews.}
+
+    \resumeItem{Received the “Piramal Excellence Award” for building \textbf{30+ ML and analytics pipelines} with workflows for monitoring for model health for retraining triggers and business KPIs for performance reporting, improving operational efficiency by 85\%.}
+    
+    \resumeItemListEnd
+
+\resumeSubheading
+    {Data Scientist}
+    {Mumbai, India}
+    {Piramal Pharma Ltd.}
+    {Jul 2021 - Dec 2021}
+
+    \resumeItemListStart
+    \resumeItem{Intern in the Consumer Products division, delivering data science projects with high-impact in business-facing initiatives.}
+
+    \resumeItem{Built the company's first product recommendation engine and coded the Tree-based FP-Growth algorithm from scratch, achieving a \textbf{15\% quarterly increase} in market penetration across \textbf{400,000 retailers}.}
+
+    \resumeItem{Boosted high-performing sales reps \textbf{retention rates to 93\%} by developing an attrition prediction model using XGBoost and Logistic Regression on historic sales performance and past employee data.}
+
+    % \resumeItem{Recognized for impact by the CEO and offered a leadership role to build and head a new data science team.}
+    \resumeItemListEnd
+    
+
+\resumeSubHeadingListEnd
+
+%----------------- CERTIFICATIONS -----------------
+\vspace{-18pt}
+\section{\normalsize{C}\small{ERTIFICATIONS}}
+\vspace{-7pt}
+\resumeItemListStart
+\resumeItem{
+\href{\salink}
+{\textsl{AWS Certified Solutions Architect – Associate, Amazon Web Services}}\hfill\sl{May 2025 - May 2028}}
+\vspace{-5pt}
+\resumeItem{
+\href{\mllink}{\textsl{AWS Certified Machine Learning – Specialty, Amazon Web Services}} \hfill\sl{Jun 2025 - Jun 2028}}
+\resumeItemListEnd
+
+
+%-------------------EDUCATION---------------------
+\vspace{-18pt}
+\section{Education}
+\vspace{-5pt}
+\resumeSubHeadingListStart
+\resumeSubheading
+    {University of Virginia {(UVA)}}
+    {Charlottesville, VA}
+    {Master of Science in Data Science, GPA: 4.0/4.0}
+    {Jun 2024 - May 2025}
+
+    % \vspace{5pt}
+    % \footnotesize{
+    % Data Science Ambassador {\textbullet}
+    % Teaching Assistant - Statistical Learning {\textbullet}
+    % Range Resident
+    % }
+
+    \vspace{10pt}
+    % \small{{Certifications:}
+    % {\href{\salink}
+    % {\textsl{AWS Solutions Architect - Associate}}},
+    % {\href{\mllink}
+    % {\textsl{AWS Machine Learning - Specialty}}}}
+    
+
+
+\resumeSubheading
+    {Birla Institute of Technology and Science \normalsize{(BITS Pilani)}}
+    {Hyderabad, India}
+    {B.E. Mechanical Engineering, Minor in Data Science, GPA: 3.8/4.0}
+    {Aug 2018 - Dec 2021}
+\resumeSubHeadingListEnd
+\vspace{-14pt}
+
+%----------------- SKILLS ------------------------
+\section{Skills}
+\vspace{-7pt}
+\begin{itemize}[leftmargin=0.00in, label={}, itemsep=0pt, parsep=0pt]
+\item{
+{\textbf{Languages:} Python, R, SQL, Scala, JavaScript, Bash}
+}
+
+\item{
+{\textbf{LLMs \& GenAI:} Transformers, LangChain, HuggingFace, RAG, Prompt Engineering, PEFT (LoRA, IA3), Fine-tuning
+}}
+
+\item{
+{\textbf{Machine Learning:} Sklearn, XGBoost, LightGBM, NLP (SpaCy, VADER), Statistical Modeling, A/B Testing, Recommendation Engines
+}}
+
+\item{
+{\textbf{Cloud and Tools:} AWS (Certified), Azure,  Databricks, Snowflake, Git, Conda, Flask}
+}
+
+\item{
+\small{\textbf{Data Engineering}: Apache Spark, Snowflake, Hadoop, MLflow, Airflow, Docker, APIs, Web Scraping}
+}
+
+\item{
+\small{\textbf{Visualization:} Power BI, Plotly Dash, Seaborn, Matplotlib}
+}
+
+\end{itemize}
+
+
+
+%-------------------EOD-----------------------------
+\end{document}
